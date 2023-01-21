@@ -2,6 +2,19 @@ import { CSSProperties } from "react";
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 import { red } from "@mui/material/colors";
 
+declare module "@mui/material/Button" {
+  // eslint-disable-next-line no-unused-vars
+  interface ButtonPropsVariantOverrides {
+    dashed: true;
+    primary: true;
+    secondary: true;
+    customDisabled: true; // created a customDisabled variant instead of disabled to enable mouse-pointer disabled state (this is not possible with the default disabled MUI styles)
+    menuButton: true;
+    pressed: true;
+    signUp: true;
+  }
+}
+
 declare module "@mui/material/styles" {
   // eslint-disable-next-line no-used-vars
   interface TypographyVariants {
@@ -182,6 +195,106 @@ let theme = createTheme({
     overlineLabel: {
       fontWeight: "700",
       letterSpacing: "0px",
+    },
+  },
+  components: {
+    MuiButton: {
+      variants: [
+        {
+          props: { variant: "primary" },
+          style: {
+            textTransform: "none",
+            width: "199px",
+            height: "48px",
+            backgroundColor: "#263238",
+            color: "#F4FBFE",
+            borderRadius: "50px",
+            fontSize: "18px",
+          },
+        },
+        {
+          props: { variant: "secondary" },
+          style: {
+            textTransform: "none",
+            width: "199px",
+            height: "48px",
+            color: "#263238",
+            borderRadius: "50px",
+            fontSize: "18px",
+            fontWeight: "400",
+            border: "1px solid #263238",
+            "&:hover": {
+              border: "1px solid #5A6859",
+            },
+          },
+        },
+        {
+          props: { variant: "customDisabled" },
+          style: {
+            textTransform: "none",
+            maxWidth: "199px",
+            height: "48px",
+            backgroundColor: "#D1D5DB",
+            color: "#F4FBFE",
+            borderRadius: "50px",
+            cursor: "not-allowed",
+          },
+        },
+        {
+          props: { variant: "outlined" },
+          style: {
+            textTransform: "none",
+            maxWidth: "199px",
+            height: "48px",
+            color: "Black",
+            borderRadius: "50px",
+          },
+        },
+        {
+          props: { variant: "pressed" },
+          style: {
+            textTransform: "none",
+            width: "199px",
+            height: "48px",
+            backgroundColor: "#424D3E",
+            color: "#F4FBFE",
+            borderRadius: "50px",
+          },
+        },
+        {
+          props: { variant: "menuButton" },
+          style: {
+            textTransform: "none",
+            width: "199px",
+            height: "48px",
+            backgroundColor: "#1F2937",
+            color: "#F4FBFE",
+            borderRadius: "50px",
+          },
+        },
+        {
+          props: { variant: "signUp" },
+          style: {
+            textTransform: "none",
+            width: "104px",
+            height: "32px",
+            color: "#566551",
+            borderRadius: "50px",
+            border: "1px solid #566551",
+          },
+        },
+      ],
+
+      styleOverrides: {
+        root: ({ ownerState }) => ({
+          ...(ownerState.variant !== "customDisabled" && {
+            "&:hover": { backgroundColor: "#9DB794" },
+          }),
+          ...(ownerState.variant === "customDisabled" && {
+            "&:hover": { backgroundColor: "#D1D5DB", cursor: "not-allowed" },
+          }),
+        }),
+      },
     },
   },
 });
