@@ -7,7 +7,7 @@ import { Jumbotron } from "../src/components/HomepageComponents/Jumbotron";
 import Layout from "../src/components/Layout";
 import { PriceCardGrid } from "../src/components/HomepageComponents/PriceGrid/PriceCardGrid";
 
-const Home: NextPage = () => {
+const BookanAppoinment: NextPage = () => {
   return (
     <Layout>
 
@@ -24,4 +24,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default BookanAppoinment;

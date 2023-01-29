@@ -3,7 +3,7 @@ import { FC } from "react";
 
 //Import Next.js componenets
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl";
 
 //Import MUI components
 import AppBar from "@mui/material/AppBar";
@@ -29,9 +29,10 @@ const page_hrefs: Ipage_href[] = [
   { textKey: "Learning Platform", path: "/#" },
   { textKey: "Community", path: "/#" },
   { textKey: "Contact Us", path: "/#" },
+  { textKey: "Appointemt", path: "/appointment" },
 ];
 export interface Ipage_href {
-  textKey: "Learning Platform" | "Community" | "Contact Us";
+  textKey: "Learning Platform" | "Community" | "Contact Us" | "Appointemt";
   path: string;
 }
 
