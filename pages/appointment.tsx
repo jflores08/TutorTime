@@ -3,7 +3,7 @@ import type { NextPage } from "next";
 
 // Import custom comtonents
 import { CourseCardGrid } from "../src/components/HomepageComponents/CourseGrid/CourseCardGrid";
-import { Calendar } from "../src/components/BookAnAppointmentFlow/components/calendar";
+import { Calendar } from "../src/components/BookAnAppointmentFlow/components/Calendar";
 import { CalendarJumbotron } from "../src/components/BookAnAppointmentFlow/components/calendarJumbotron";
 import Layout from "../src/components/Layout";
 import { PriceCardGrid } from "../src/components/HomepageComponents/PriceGrid/PriceCardGrid";
@@ -19,12 +19,13 @@ const Appointment: NextPage = () => {
       {/* Jumbotron */}
       {/* <Calendar /> */}
       <CalendarHeader />
-      <Typography
+      <Calendar />
+      {/* <Typography
         sx={{ display: "flex", justifyContent: "center" }}
         variant="h1"
       >
         Calendar
-      </Typography>
+      </Typography> */}
 
       {/* 3 Displaying Product Cards */}
       <CourseCardGrid />
