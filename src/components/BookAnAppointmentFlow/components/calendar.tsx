@@ -1,5 +1,6 @@
 // // Import react components
 import * as React from "react";
+import { Fragment } from "react";
 import { useState } from "react";
 import { FC } from "react";
 
@@ -15,12 +16,13 @@ import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { StaticDatePicker } from "@mui/x-date-pickers/StaticDatePicker";
 import { PickersDay } from "@mui/x-date-pickers/PickersDay";
 import Badge from "@mui/material/Badge";
+import CheckIcon from "@mui/icons-material/Check";
 
-const isWeekend = (date: Dayjs) => {
-  const day = date.day();
+// const isWeekend = (date: Dayjs) => {
+//   const day = date.day();
 
-  return day === 0 || day === 6;
-};
+//   return day === 0 || day === 6;
+// };
 
 //   export default function StaticDatePickerLandscape() {
 
@@ -74,7 +76,7 @@ export const Calendar: FC<{}> = () => {
                 <Badge
                   key={day.toString()}
                   overlap="circular"
-                  badgeContent={isSelected ? "🌚" : undefined}
+                  badgeContent={isSelected ? <CheckIcon /> : undefined}
                 >
                   <PickersDay {...DayComponentProps} />
                 </Badge>

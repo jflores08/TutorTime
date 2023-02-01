@@ -1,6 +1,6 @@
 import { FC, useState } from "react";
 
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 import Box from "@mui/material/Box";
