@@ -54,40 +54,11 @@ const Footer: FC<FooterProps> = ({ pages, bgColor = "#F5F5F5" }) => {
             <Image
               src="/logos/EruditeEndeavors-logo.png"
               alt="tutor-logo"
-              width={130}
-              height={46}
+              width={260}
+              height={92}
             ></Image>
           </Grid>
           <Grid item xs={12} md={0} lg={0} xl={0.5}></Grid>
-          <Grid item xs={12} md={4} lg={4} xl={3}>
-            {footer_hrefs.map((link, index) => (
-              <MuiLink href={link.path} key={index} underline="none">
-                <Typography variant="h6" component="div" sx={{ mb: "25px" }}>
-                  {link.textKey}
-                </Typography>
-              </MuiLink>
-            ))}
-          </Grid>
-          <Grid item xs={12} md={3}>
-            <MuiLink
-              target="_blank"
-              href="/pdf_files/Equip_Privacy_Policy_July_2022.pdf"
-              style={{ textDecoration: "none" }}
-            >
-              <Typography variant="h6" component="div" sx={{ mb: "25px" }}>
-                {"navLink middle 1"}
-              </Typography>
-            </MuiLink>
-            <MuiLink
-              target="_blank"
-              href="/pdf_files/Equip_Terms_of_Service_August_2022.pdf"
-              style={{ textDecoration: "none" }}
-            >
-              <Typography variant="h6" component="div" sx={{ mb: "25px" }}>
-                {"navLink middle 2"}
-              </Typography>
-            </MuiLink>
-          </Grid>
           <Grid item xs={12} md={5} lg={5} xl={3.5}>
             <div>
               <Typography
@@ -167,6 +138,36 @@ const Footer: FC<FooterProps> = ({ pages, bgColor = "#F5F5F5" }) => {
               </Typography>
             </div>
           </Grid>
+          <Grid item xs={12} md={4} lg={4} xl={3}>
+            {footer_hrefs.map((link, index) => (
+              <MuiLink href={link.path} key={index} underline="none">
+                <Typography variant="h6" component="div" sx={{ mb: "25px" }}>
+                  {link.textKey}
+                </Typography>
+              </MuiLink>
+            ))}
+          </Grid>
+          <Grid item xs={12} md={3}>
+            <MuiLink
+              target="_blank"
+              href="/pdf_files/Equip_Privacy_Policy_July_2022.pdf"
+              style={{ textDecoration: "none" }}
+            >
+              <Typography variant="h6" component="div" sx={{ mb: "25px" }}>
+                {"navLink middle 1"}
+              </Typography>
+            </MuiLink>
+            <MuiLink
+              target="_blank"
+              href="/pdf_files/Equip_Terms_of_Service_August_2022.pdf"
+              style={{ textDecoration: "none" }}
+            >
+              <Typography variant="h6" component="div" sx={{ mb: "25px" }}>
+                {"navLink middle 2"}
+              </Typography>
+            </MuiLink>
+          </Grid>
+
           <Grid item xs={12}>
             <Copyright />
           </Grid>

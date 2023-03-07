@@ -7,6 +7,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button/Button";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
+import { Link as MuiLink } from "@mui/material";
 
 // Import Custom components
 import { AvatarProfileCard } from "./Avatar/AvatarProfileCard";
@@ -58,19 +59,21 @@ const HeroSection: FC<{}> = () => {
               hold certifications in Photography, photo and video editing, as
               well as web design.
             </Typography>
-            <Button
-              size="medium"
-              variant="contained"
-              sx={{
-                width: "50%",
-                marginTop: "10px",
-                backgroundColor: "#0072F5",
-                color: "#FFFFFF",
-                borderRadius: "10px",
-              }}
-            >
-              Book Appoinment
-            </Button>
+            <MuiLink href="mailto:eruditeendeavors@gmail.com">
+              <Button
+                size="medium"
+                variant="contained"
+                sx={{
+                  width: "50%",
+                  marginTop: "10px",
+                  backgroundColor: "#0072F5",
+                  color: "#FFFFFF",
+                  borderRadius: "10px",
+                }}
+              >
+                Email Inquiries
+              </Button>
+            </MuiLink>
           </Grid>
           <Grid item md={1}></Grid>
           <Grid

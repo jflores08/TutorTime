@@ -10,11 +10,11 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 
 // Import custom react components
-import InnerHTML from 'dangerously-set-html-content'
+import InnerHTML from "dangerously-set-html-content";
+import { Typography } from "@mui/material";
 
 const AppointmentMenu: FC = () => {
-
-    const squareAppointmentScript = `<script src='https://square.site/appointments/buyer/widget/nzx3mnv7dsf78j/LHCNT5D4S3CEC.js'></script>`
+  const squareAppointmentScript = `<script src='https://square.site/appointments/buyer/widget/nzx3mnv7dsf78j/LHCNT5D4S3CEC.js'></script>`;
 
   return (
     <Box
@@ -31,9 +31,13 @@ const AppointmentMenu: FC = () => {
         sx={{
           bgcolor: "#FFFFFF",
           display: "flex",
+          flexDirection: "column",
           mt: "30px",
         }}
       >
+        <Typography variant="h1" component="h1">
+          Book an Appointment
+        </Typography>
         <Box
           id="priceCardGridBox"
           sx={{
@@ -42,7 +46,7 @@ const AppointmentMenu: FC = () => {
             mr: "24px",
           }}
         >
-         <InnerHTML html={squareAppointmentScript} />
+          <InnerHTML html={squareAppointmentScript} />
         </Box>
       </Container>
     </Box>
