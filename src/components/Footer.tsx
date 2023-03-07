@@ -154,7 +154,7 @@ const Footer: FC<FooterProps> = ({ pages, bgColor = "#F5F5F5" }) => {
               style={{ textDecoration: "none" }}
             >
               <Typography variant="h6" component="div" sx={{ mb: "25px" }}>
-                {"navLink middle 1"}
+                {"Privacy Policy"}
               </Typography>
             </MuiLink>
             <MuiLink
@@ -163,7 +163,7 @@ const Footer: FC<FooterProps> = ({ pages, bgColor = "#F5F5F5" }) => {
               style={{ textDecoration: "none" }}
             >
               <Typography variant="h6" component="div" sx={{ mb: "25px" }}>
-                {"navLink middle 2"}
+                {"Terms of Service"}
               </Typography>
             </MuiLink>
           </Grid>
