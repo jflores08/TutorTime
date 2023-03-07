@@ -19,7 +19,7 @@ const LeftNavPart: FC<{
   return (
     <Stack
       direction="row"
-      spacing="40px"
+      // spacing="40px"
       alignItems="center"
       //   justifyContent="center"
       sx={{ flexGrow: 1 }}
@@ -31,7 +31,7 @@ const LeftNavPart: FC<{
       >
         <MuiLink href="/">
           <Image
-            src="/CoffeeCoding-logo.png"
+            src="/logos/EruditeEndeavors-logo.png"
             alt="tutor-logo"
             width={130}
             height={46}
@@ -44,6 +44,7 @@ const LeftNavPart: FC<{
           underline="none"
           color={"#000000"}
           key={index}
+          sx={{ pl: { xs: "0px", md: "64px", lg: "120px" } }}
         >
           <Typography
             variant="h6"

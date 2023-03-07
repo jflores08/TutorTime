@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 
 // Import custom components
 import ResponsiveNavBar from "./TopNavigation/ResponsiveNavMenu";
+import Footer from "./Footer";
 import { pages } from "../coreVariables";
 
 // Import MUI components
@@ -21,6 +22,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
         <ResponsiveNavBar />
       </Box>
       <main>{children}</main>
+      <Footer pages={pages} />
     </>
   );
 }

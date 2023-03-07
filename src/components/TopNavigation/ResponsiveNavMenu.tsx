@@ -26,7 +26,7 @@ import { LeftNavPart } from "./LeftNavPart";
 //   { textKey: "navLink 3", path: "/#" },
 // ];
 const page_hrefs: Ipage_href[] = [
-  { textKey: "Learning Platform", path: "/#" },
+  // { textKey: "Learning Platform", path: "/#" },
   { textKey: "Community", path: "/#" },
   { textKey: "Contact Us", path: "/#" },
   { textKey: "Appointemt", path: "/appointment" },
