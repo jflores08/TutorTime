@@ -7,8 +7,8 @@ import { Calendar } from "../src/components/BookAnAppointmentFlow/components/Cal
 import { CalendarJumbotron } from "../src/components/BookAnAppointmentFlow/components/CalendarJumbotron";
 import Layout from "../src/components/Layout";
 import { PriceCardGrid } from "../src/components/HomepageComponents/PriceGrid/PriceCardGrid";
-import { Typography } from "@mui/material";
 import { CalendarHeader } from "../src/components/BookAnAppointmentFlow/components/CalendarHeader";
+import { AppointmentMenu } from "../src/components/BookAnAppointmentFlow/AppointmentMenu";
 
 const Appointment: NextPage = () => {
   return (
@@ -16,22 +16,14 @@ const Appointment: NextPage = () => {
       {/* Jumbotron */}
       <CalendarJumbotron />
 
-      {/* Jumbotron */}
-      {/* <Calendar /> */}
-      <CalendarHeader />
-      <Calendar />
-      {/* <Typography
-        sx={{ display: "flex", justifyContent: "center" }}
-        variant="h1"
-      >
-        Calendar
-      </Typography> */}
-
       {/* 3 Displaying Product Cards */}
       <CourseCardGrid />
 
       {/* PriceCards */}
       <PriceCardGrid />
+
+      {/* Appointment */}
+      <AppointmentMenu />
     </Layout>
   );
 };

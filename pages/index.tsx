@@ -7,7 +7,7 @@ import { CourseCardGrid } from "../src/components/HomepageComponents/CourseGrid/
 import { Jumbotron } from "../src/components/HomepageComponents/Jumbotron";
 import Layout from "../src/components/Layout";
 import { PriceCardGrid } from "../src/components/HomepageComponents/PriceGrid/PriceCardGrid";
-import { AppointmentMenu } from "../src/components/HomepageComponents/AppointmentMenu";
+import { AppointmentMenu } from "../src/components/BookAnAppointmentFlow/AppointmentMenu";
 
 const Home: NextPage = () => {
   return (

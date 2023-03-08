@@ -18,13 +18,13 @@ import { PickersDay } from "@mui/x-date-pickers/PickersDay";
 import Badge from "@mui/material/Badge";
 import CheckIcon from "@mui/icons-material/Check";
 
-// const isWeekend = (date: Dayjs) => {
-//   const day = date.day();
+const isWeekend = (date: Dayjs) => {
+  const day = date.day();
 
-//   return day === 0 || day === 6;
-// };
+  return day === 0 || day === 6;
+};
 
-//   export default function StaticDatePickerLandscape() {
+  
 
 export const Calendar: FC<{}> = () => {
   const [value, setValue] = React.useState<Dayjs | null>(dayjs("2023-04-07"));

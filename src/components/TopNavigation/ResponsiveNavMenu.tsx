@@ -26,13 +26,18 @@ import { LeftNavPart } from "./LeftNavPart";
 //   { textKey: "navLink 3", path: "/#" },
 // ];
 const page_hrefs: Ipage_href[] = [
-  // { textKey: "Learning Platform", path: "/#" },
+  { textKey: "Home", path: "/#" },
   { textKey: "Community", path: "/#" },
   { textKey: "Contact Us", path: "/#" },
-  { textKey: "Appointemt", path: "/appointment" },
+  // { textKey: "Appointemt", path: "/appointment" },
 ];
 export interface Ipage_href {
-  textKey: "Learning Platform" | "Community" | "Contact Us" | "Appointemt";
+  textKey:
+    | "Home"
+    | "Learning Platform"
+    | "Community"
+    | "Contact Us"
+    | "Appointemt";
   path: string;
 }
 

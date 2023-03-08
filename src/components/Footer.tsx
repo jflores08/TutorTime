@@ -26,13 +26,14 @@ interface FooterProps {
 }
 
 const footer_hrefs: Ifooter_href[] = [
+  { textKey: "Home", path: "/#" },
   { textKey: "Community", path: "/#" },
   { textKey: "Contact Us", path: "/#" },
-  { textKey: "Appointemt", path: "/appointment" },
+  // { textKey: "Appointemt", path: "/appointment" },
 ];
 
 interface Ifooter_href {
-  textKey: "Learning Platform" | "Community" | "Contact Us" | "Appointemt";
+  textKey: "Home" | "Learning Platform" | "Community" | "Contact Us" | "Appointemt";
   path: string;
 }
 
