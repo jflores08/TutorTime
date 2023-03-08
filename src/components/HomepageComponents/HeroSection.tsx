@@ -55,8 +55,8 @@ const HeroSection: FC<{}> = () => {
               teaching 5th grade and 1 year teaching programming to elementary
               school kids. I hold degrees in Environmental studies with a
               concentration in GIS and an Associate’s degree in Behavioral and
-              Cognitive Science. I graduated both with honors. Additionally, I
-              hold certifications in Photography, photo and video editing, as
+              Cognitive Science. I graduated with honors in both. Additionally,
+              I hold certifications in Photography, photo and video editing, as
               well as web design.
             </Typography>
             <MuiLink href="mailto:eruditeendeavors@gmail.com">
