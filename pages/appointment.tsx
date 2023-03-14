@@ -3,11 +3,9 @@ import type { NextPage } from "next";
 
 // Import custom comtonents
 import { CourseCardGrid } from "../src/components/HomepageComponents/CourseGrid/CourseCardGrid";
-import { Calendar } from "../src/components/BookAnAppointmentFlow/components/Calendar";
 import { CalendarJumbotron } from "../src/components/BookAnAppointmentFlow/components/CalendarJumbotron";
 import Layout from "../src/components/Layout";
 import { PriceCardGrid } from "../src/components/HomepageComponents/PriceGrid/PriceCardGrid";
-import { CalendarHeader } from "../src/components/BookAnAppointmentFlow/components/CalendarHeader";
 import { AppointmentMenu } from "../src/components/BookAnAppointmentFlow/AppointmentMenu";
 
 const Appointment: NextPage = () => {

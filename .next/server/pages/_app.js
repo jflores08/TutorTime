@@ -1,141 +1,416 @@
-/*
- * ATTENTION: An "eval-source-map" devtool has been used.
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 (() => {
 var exports = {};
-exports.id = "pages/_app";
-exports.ids = ["pages/_app"];
+exports.id = 888;
+exports.ids = [888];
 exports.modules = {
 
-/***/ "./pages/_app.tsx":
-/*!************************!*\
-  !*** ./pages/_app.tsx ***!
-  \************************/
+/***/ 1123:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ MyApp)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_globals_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/globals.css */ \"./styles/globals.css\");\n/* harmony import */ var _styles_globals_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_globals_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _nextui_org_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @nextui-org/react */ \"@nextui-org/react\");\n/* harmony import */ var _nextui_org_react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_nextui_org_react__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _mui_material_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material/styles */ \"@mui/material/styles\");\n/* harmony import */ var _mui_material_styles__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_mui_material_styles__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _mui_material_CssBaseline__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material/CssBaseline */ \"@mui/material/CssBaseline\");\n/* harmony import */ var _mui_material_CssBaseline__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_mui_material_CssBaseline__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _src_theme__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../src/theme */ \"./src/theme.ts\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _mui_material_colors__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/material/colors */ \"@mui/material/colors\");\n/* harmony import */ var _mui_material_colors__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_mui_material_colors__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var _mui_joy_styles__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/joy/styles */ \"@mui/joy/styles\");\n/* harmony import */ var _mui_joy_styles__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_mui_joy_styles__WEBPACK_IMPORTED_MODULE_8__);\n/* harmony import */ var _mui_icons_material_DarkMode__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/icons-material/DarkMode */ \"@mui/icons-material/DarkMode\");\n/* harmony import */ var _mui_icons_material_DarkMode__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_mui_icons_material_DarkMode__WEBPACK_IMPORTED_MODULE_9__);\n/* harmony import */ var _mui_icons_material_LightMode__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @mui/icons-material/LightMode */ \"@mui/icons-material/LightMode\");\n/* harmony import */ var _mui_icons_material_LightMode__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_mui_icons_material_LightMode__WEBPACK_IMPORTED_MODULE_10__);\n/* harmony import */ var _mui_joy_IconButton__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @mui/joy/IconButton */ \"@mui/joy/IconButton\");\n/* harmony import */ var _mui_joy_IconButton__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_mui_joy_IconButton__WEBPACK_IMPORTED_MODULE_11__);\n\n\n\n// Used to manage localization in the app\n// import { NextIntlProvider } from 'next-intl'\n// Import MUI components\n\n\n// Import Custom components\n\n// Import JoyUI components\n\n\n\n\n// Icons\n\n\n\nconst ModeToggle = ()=>{\n    const { mode , setMode  } = (0,_mui_material_styles__WEBPACK_IMPORTED_MODULE_3__.useColorScheme)();\n    const [mounted, setMounted] = react__WEBPACK_IMPORTED_MODULE_6__.useState(false);\n    react__WEBPACK_IMPORTED_MODULE_6__.useEffect(()=>{\n        setMounted(true);\n    }, []);\n    if (!mounted) {\n        return null;\n    }\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((_mui_joy_IconButton__WEBPACK_IMPORTED_MODULE_11___default()), {\n        onClick: ()=>setMode(mode === \"dark\" ? \"light\" : \"dark\"),\n        children: mode === \"dark\" ? /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((_mui_icons_material_DarkMode__WEBPACK_IMPORTED_MODULE_9___default()), {}, void 0, false, {\n            fileName: \"/Users/thelookingglass/Desktop/Front-end/SinglePageWeb/nextJSStartupPage/TutorTime/pages/_app.tsx\",\n            lineNumber: 135,\n            columnNumber: 26\n        }, undefined) : /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((_mui_icons_material_LightMode__WEBPACK_IMPORTED_MODULE_10___default()), {}, void 0, false, {\n            fileName: \"/Users/thelookingglass/Desktop/Front-end/SinglePageWeb/nextJSStartupPage/TutorTime/pages/_app.tsx\",\n            lineNumber: 135,\n            columnNumber: 41\n        }, undefined)\n    }, void 0, false, {\n        fileName: \"/Users/thelookingglass/Desktop/Front-end/SinglePageWeb/nextJSStartupPage/TutorTime/pages/_app.tsx\",\n        lineNumber: 134,\n        columnNumber: 5\n    }, undefined);\n};\nconst muiTheme = (0,_mui_material_styles__WEBPACK_IMPORTED_MODULE_3__.experimental_extendTheme)();\nconst joyTheme = (0,_mui_joy_styles__WEBPACK_IMPORTED_MODULE_8__.extendTheme)({\n    cssVarPrefix: \"mui\",\n    colorSchemes: {\n        light: {\n            palette: {\n                primary: {\n                    ..._mui_material_colors__WEBPACK_IMPORTED_MODULE_7__.blue,\n                    solidColor: \"var(--mui-palette-primary-contrastText)\",\n                    solidBg: \"var(--mui-palette-primary-main)\",\n                    solidHoverBg: \"var(--mui-palette-primary-dark)\",\n                    plainColor: \"var(--mui-palette-primary-main)\",\n                    plainHoverBg: \"rgba(var(--mui-palette-primary-mainChannel) / var(--mui-palette-action-hoverOpacity))\",\n                    plainActiveBg: \"rgba(var(--mui-palette-primary-mainChannel) / 0.3)\",\n                    outlinedBorder: \"rgba(var(--mui-palette-primary-mainChannel) / 0.5)\",\n                    outlinedColor: \"var(--mui-palette-primary-main)\",\n                    outlinedHoverBg: \"rgba(var(--mui-palette-primary-mainChannel) / var(--mui-palette-action-hoverOpacity))\",\n                    outlinedHoverBorder: \"var(--mui-palette-primary-main)\",\n                    outlinedActiveBg: \"rgba(var(--mui-palette-primary-mainChannel) / 0.3)\"\n                },\n                neutral: {\n                    ..._mui_material_colors__WEBPACK_IMPORTED_MODULE_7__.grey\n                },\n                divider: \"var(--mui-palette-divider)\",\n                text: {\n                    tertiary: \"rgba(0 0 0 / 0.56)\"\n                }\n            }\n        },\n        dark: {\n            palette: {\n                primary: {\n                    ..._mui_material_colors__WEBPACK_IMPORTED_MODULE_7__.blue,\n                    solidColor: \"var(--mui-palette-primary-contrastText)\",\n                    solidBg: \"var(--mui-palette-primary-main)\",\n                    solidHoverBg: \"var(--mui-palette-primary-dark)\",\n                    plainColor: \"var(--mui-palette-primary-main)\",\n                    plainHoverBg: \"rgba(var(--mui-palette-primary-mainChannel) / var(--mui-palette-action-hoverOpacity))\",\n                    plainActiveBg: \"rgba(var(--mui-palette-primary-mainChannel) / 0.3)\",\n                    outlinedBorder: \"rgba(var(--mui-palette-primary-mainChannel) / 0.5)\",\n                    outlinedColor: \"var(--mui-palette-primary-main)\",\n                    outlinedHoverBg: \"rgba(var(--mui-palette-primary-mainChannel) / var(--mui-palette-action-hoverOpacity))\",\n                    outlinedHoverBorder: \"var(--mui-palette-primary-main)\",\n                    outlinedActiveBg: \"rgba(var(--mui-palette-primary-mainChannel) / 0.3)\"\n                },\n                neutral: {\n                    ..._mui_material_colors__WEBPACK_IMPORTED_MODULE_7__.grey\n                },\n                divider: \"var(--mui-palette-divider)\",\n                text: {\n                    tertiary: \"rgba(255 255 255 / 0.5)\"\n                }\n            }\n        }\n    },\n    fontFamily: {\n        display: '\"Roboto\",\"Helvetica\",\"Arial\",sans-serif',\n        body: '\"Roboto\",\"Helvetica\",\"Arial\",sans-serif'\n    },\n    shadow: {\n        xs: `var(--mui-shadowRing), ${muiTheme.shadows[1]}`,\n        sm: `var(--mui-shadowRing), ${muiTheme.shadows[2]}`,\n        md: `var(--mui-shadowRing), ${muiTheme.shadows[4]}`,\n        lg: `var(--mui-shadowRing), ${muiTheme.shadows[8]}`,\n        xl: `var(--mui-shadowRing), ${muiTheme.shadows[12]}`\n    }\n});\nconst darkTheme = (0,_nextui_org_react__WEBPACK_IMPORTED_MODULE_2__.createTheme)({\n    type: \"dark\"\n});\nfunction MyApp({ Component , pageProps  }) {\n    return(// <CssVarsProvider theme={deepmerge(joyTheme, muiTheme)}>\n    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_mui_material_styles__WEBPACK_IMPORTED_MODULE_3__.ThemeProvider, {\n        theme: _src_theme__WEBPACK_IMPORTED_MODULE_5__[\"default\"],\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((_mui_material_CssBaseline__WEBPACK_IMPORTED_MODULE_4___default()), {}, void 0, false, {\n                fileName: \"/Users/thelookingglass/Desktop/Front-end/SinglePageWeb/nextJSStartupPage/TutorTime/pages/_app.tsx\",\n                lineNumber: 222,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(Component, {\n                ...pageProps\n            }, void 0, false, {\n                fileName: \"/Users/thelookingglass/Desktop/Front-end/SinglePageWeb/nextJSStartupPage/TutorTime/pages/_app.tsx\",\n                lineNumber: 224,\n                columnNumber: 7\n            }, this)\n        ]\n    }, void 0, true, {\n        fileName: \"/Users/thelookingglass/Desktop/Front-end/SinglePageWeb/nextJSStartupPage/TutorTime/pages/_app.tsx\",\n        lineNumber: 220,\n        columnNumber: 5\n    }, this));\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,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OERBQUNELGtFQUFXQTs7Ozs7MEJBRVosOERBQUN5RDtnQkFBVyxHQUFHQyxTQUFTOzs7Ozs7Ozs7Ozs7QUFLOUIsQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL2xhbmRpbmctcGFnZS8uL3BhZ2VzL19hcHAudHN4PzJmYmUiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFwiLi4vc3R5bGVzL2dsb2JhbHMuY3NzXCI7XG5pbXBvcnQgdHlwZSB7IEFwcFByb3BzIH0gZnJvbSBcIm5leHQvYXBwXCI7XG5pbXBvcnQgeyBOZXh0VUlQcm92aWRlciwgY3JlYXRlVGhlbWUgfSBmcm9tIFwiQG5leHR1aS1vcmcvcmVhY3RcIjtcblxuLy8gVXNlZCB0byBtYW5hZ2UgbG9jYWxpemF0aW9uIGluIHRoZSBhcHBcbi8vIGltcG9ydCB7IE5leHRJbnRsUHJvdmlkZXIgfSBmcm9tICduZXh0LWludGwnXG5cbi8vIEltcG9ydCBNVUkgY29tcG9uZW50c1xuaW1wb3J0IHsgVGhlbWVQcm92aWRlciB9IGZyb20gXCJAbXVpL21hdGVyaWFsL3N0eWxlc1wiO1xuaW1wb3J0IENzc0Jhc2VsaW5lIGZyb20gXCJAbXVpL21hdGVyaWFsL0Nzc0Jhc2VsaW5lXCI7XG5cbi8vIEltcG9ydCBDdXN0b20gY29tcG9uZW50c1xuaW1wb3J0IHRoZW1lIGZyb20gXCIuLi9zcmMvdGhlbWVcIjtcblxuLy8gSW1wb3J0IEpveVVJIGNvbXBvbmVudHNcbmltcG9ydCAqIGFzIFJlYWN0IGZyb20gXCJyZWFjdFwiO1xuaW1wb3J0IHsgZGVlcG1lcmdlIH0gZnJvbSBcIkBtdWkvdXRpbHNcIjtcbmltcG9ydCB0eXBlIHt9IGZyb20gXCJAbXVpL21hdGVyaWFsL3RoZW1lQ3NzVmFyc0F1Z21lbnRhdGlvblwiO1xuaW1wb3J0IHtcbiAgdXNlQ29sb3JTY2hlbWUsXG4gIEV4cGVyaW1lbnRhbF9Dc3NWYXJzUHJvdmlkZXIgYXMgQ3NzVmFyc1Byb3ZpZGVyLFxuICBleHBlcmltZW50YWxfZXh0ZW5kVGhlbWUgYXMgZXh0ZW5kTXVpVGhlbWUsXG4gIFBhbGV0dGVDb2xvcixcbiAgVHlwZVRleHQsXG4gIFR5cGVBY3Rpb24sXG4gIFR5cGVCYWNrZ3JvdW5kLFxuICBDb21tb25Db2xvcnMsXG4gIE92ZXJsYXlzLFxuICBQYWxldHRlQ29sb3JDaGFubmVsLFxuICBQYWxldHRlQWxlcnQsXG4gIFBhbGV0dGVBcHBCYXIsXG4gIFBhbGV0dGVBdmF0YXIsXG4gIFBhbGV0dGVDaGlwLFxuICBQYWxldHRlRmlsbGVkSW5wdXQsXG4gIFBhbGV0dGVMaW5lYXJQcm9ncmVzcyxcbiAgUGFsZXR0ZVNsaWRlcixcbiAgUGFsZXR0ZVNrZWxldG9uLFxuICBQYWxldHRlU25hY2tiYXJDb250ZW50LFxuICBQYWxldHRlU3BlZWREaWFsQWN0aW9uLFxuICBQYWxldHRlU3RlcENvbm5lY3RvcixcbiAgUGFsZXR0ZVN0ZXBDb250ZW50LFxuICBQYWxldHRlU3dpdGNoLFxuICBQYWxldHRlVGFibGVDZWxsLFxuICBQYWxldHRlVG9vbHRpcCxcbiAgU2hhZG93cyxcbiAgWkluZGV4LFxufSBmcm9tIFwiQG11aS9tYXRlcmlhbC9zdHlsZXNcIjtcbmltcG9ydCB7IGJsdWUsIGdyZXkgfSBmcm9tIFwiQG11aS9tYXRlcmlhbC9jb2xvcnNcIjtcbmltcG9ydCB7IGV4dGVuZFRoZW1lIGFzIGV4dGVuZEpveVRoZW1lIH0gZnJvbSBcIkBtdWkvam95L3N0eWxlc1wiO1xuXG4vLyBNYXRlcmlhbCBVSSBjb21wb25lbnRzXG5pbXBvcnQgU3RhY2sgZnJvbSBcIkBtdWkvbWF0ZXJpYWwvU3RhY2tcIjtcbmltcG9ydCBCdXR0b24gZnJvbSBcIkBtdWkvbWF0ZXJpYWwvQnV0dG9uXCI7XG5cbi8vIEljb25zXG5pbXBvcnQgRGFya01vZGUgZnJvbSBcIkBtdWkvaWNvbnMtbWF0ZXJpYWwvRGFya01vZGVcIjtcbmltcG9ydCBMaWdodE1vZGUgZnJvbSBcIkBtdWkvaWNvbnMtbWF0ZXJpYWwvTGlnaHRNb2RlXCI7XG5cbi8vIEpveSBVSSBjb21wb25lbnRzXG5pbXBvcnQgQXNwZWN0UmF0aW8gZnJvbSBcIkBtdWkvam95L0FzcGVjdFJhdGlvXCI7XG5pbXBvcnQgQm94IGZyb20gXCJAbXVpL2pveS9Cb3hcIjtcbmltcG9ydCBKb3lCdXR0b24gZnJvbSBcIkBtdWkvam95L0J1dHRvblwiO1xuaW1wb3J0IEljb25CdXR0b24gZnJvbSBcIkBtdWkvam95L0ljb25CdXR0b25cIjtcbmltcG9ydCBDYXJkIGZyb20gXCJAbXVpL2pveS9DYXJkXCI7XG5pbXBvcnQgVHlwb2dyYXBoeSBmcm9tIFwiQG11aS9qb3kvVHlwb2dyYXBoeVwiO1xuXG5pbXBvcnQgdHlwZSB7fSBmcm9tIFwiQG11aS9tYXRlcmlhbC90aGVtZUNzc1ZhcnNBdWdtZW50YXRpb25cIjtcbmltcG9ydCB7XG4gIFRoZW1lIGFzIEpveVRoZW1lLFxuICBUaGVtZUNzc1ZhciBhcyBKb3lUaGVtZUNzc1Zhcixcbn0gZnJvbSBcIkBtdWkvam95L3N0eWxlc1wiO1xuXG4vLyBleHRlbmRzIEpveSB0aGVtZSB0byBpbmNsdWRlIHRva2VucyBmcm9tIE1hdGVyaWFsIFVJXG5kZWNsYXJlIG1vZHVsZSBcIkBtdWkvam95L3N0eWxlc1wiIHtcbiAgaW50ZXJmYWNlIFBhbGV0dGUge1xuICAgIHNlY29uZGFyeTogUGFsZXR0ZUNvbG9yQ2hhbm5lbDtcbiAgICBlcnJvcjogUGFsZXR0ZUNvbG9yQ2hhbm5lbDtcbiAgICBkaXZpZGVyQ2hhbm5lbDogc3RyaW5nO1xuICAgIGFjdGlvbjogVHlwZUFjdGlvbjtcbiAgICBBbGVydDogUGFsZXR0ZUFsZXJ0O1xuICAgIEFwcEJhcjogUGFsZXR0ZUFwcEJhcjtcbiAgICBBdmF0YXI6IFBhbGV0dGVBdmF0YXI7XG4gICAgQ2hpcDogUGFsZXR0ZUNoaXA7XG4gICAgRmlsbGVkSW5wdXQ6IFBhbGV0dGVGaWxsZWRJbnB1dDtcbiAgICBMaW5lYXJQcm9ncmVzczogUGFsZXR0ZUxpbmVhclByb2dyZXNzO1xuICAgIFNrZWxldG9uOiBQYWxldHRlU2tlbGV0b247XG4gICAgU2xpZGVyOiBQYWxldHRlU2xpZGVyO1xuICAgIFNuYWNrYmFyQ29udGVudDogUGFsZXR0ZVNuYWNrYmFyQ29udGVudDtcbiAgICBTcGVlZERpYWxBY3Rpb246IFBhbGV0dGVTcGVlZERpYWxBY3Rpb247XG4gICAgU3RlcENvbm5lY3RvcjogUGFsZXR0ZVN0ZXBDb25uZWN0b3I7XG4gICAgU3RlcENvbnRlbnQ6IFBhbGV0dGVTdGVwQ29udGVudDtcbiAgICBTd2l0Y2g6IFBhbGV0dGVTd2l0Y2g7XG4gICAgVGFibGVDZWxsOiBQYWxldHRlVGFibGVDZWxsO1xuICAgIFRvb2x0aXA6IFBhbGV0dGVUb29sdGlwO1xuICB9XG4gIGludGVyZmFjZSBQYWxldHRlUHJpbWFyeSBleHRlbmRzIFBhbGV0dGVDb2xvciB7fVxuICBpbnRlcmZhY2UgUGFsZXR0ZUluZm8gZXh0ZW5kcyBQYWxldHRlQ29sb3Ige31cbiAgaW50ZXJmYWNlIFBhbGV0dGVTdWNjZXNzIGV4dGVuZHMgUGFsZXR0ZUNvbG9yIHt9XG4gIGludGVyZmFjZSBQYWxldHRlV2FybmluZyBleHRlbmRzIFBhbGV0dGVDb2xvciB7fVxuICBpbnRlcmZhY2UgUGFsZXR0ZUNvbW1vbiBleHRlbmRzIENvbW1vbkNvbG9ycyB7fVxuICBpbnRlcmZhY2UgUGFsZXR0ZVRleHQgZXh0ZW5kcyBUeXBlVGV4dCB7fVxuICBpbnRlcmZhY2UgUGFsZXR0ZUJhY2tncm91bmQgZXh0ZW5kcyBUeXBlQmFja2dyb3VuZCB7fVxuXG4gIGludGVyZmFjZSBUaGVtZVZhcnMge1xuICAgIC8vIGF0dGFjaCB0byBKb3kgVUkgYHRoZW1lLnZhcnNgXG4gICAgc2hhZG93czogU2hhZG93cztcbiAgICBvdmVybGF5czogT3ZlcmxheXM7XG4gICAgekluZGV4OiBaSW5kZXg7XG4gIH1cbn1cblxudHlwZSBNZXJnZWRUaGVtZUNzc1ZhciA9IHsgW2sgaW4gSm95VGhlbWVDc3NWYXJdOiB0cnVlIH07XG5cbmRlY2xhcmUgbW9kdWxlIFwiQG11aS9tYXRlcmlhbC9zdHlsZXNcIiB7XG4gIGludGVyZmFjZSBUaGVtZSB7XG4gICAgLy8gcHV0IGV2ZXJ5dGhpbmcgYmFjayB0byBNYXRlcmlhbCBVSSBgdGhlbWUudmFyc2BcbiAgICB2YXJzOiBKb3lUaGVtZVtcInZhcnNcIl07XG4gIH1cblxuICAvLyBtYWtlcyBNYXRlcmlhbCBVSSB0aGVtZS5nZXRDc3NWYXIoKSBzZWVzIEpveSB0aGVtZSB0b2tlbnNcbiAgaW50ZXJmYWNlIFRoZW1lQ3NzVmFyT3ZlcnJpZGVzIGV4dGVuZHMgTWVyZ2VkVGhlbWVDc3NWYXIge31cbn1cblxuY29uc3QgTW9kZVRvZ2dsZSA9ICgpID0+IHtcbiAgY29uc3QgeyBtb2RlLCBzZXRNb2RlIH0gPSB1c2VDb2xvclNjaGVtZSgpO1xuICBjb25zdCBbbW91bnRlZCwgc2V0TW91bnRlZF0gPSBSZWFjdC51c2VTdGF0ZShmYWxzZSk7XG4gIFJlYWN0LnVzZUVmZmVjdCgoKSA9PiB7XG4gICAgc2V0TW91bnRlZCh0cnVlKTtcbiAgfSwgW10pO1xuICBpZiAoIW1vdW50ZWQpIHtcbiAgICByZXR1cm4gbnVsbDtcbiAgfVxuICByZXR1cm4gKFxuICAgIDxJY29uQnV0dG9uIG9uQ2xpY2s9eygpID0+IHNldE1vZGUobW9kZSA9PT0gXCJkYXJrXCIgPyBcImxpZ2h0XCIgOiBcImRhcmtcIil9PlxuICAgICAge21vZGUgPT09IFwiZGFya1wiID8gPERhcmtNb2RlIC8+IDogPExpZ2h0TW9kZSAvPn1cbiAgICA8L0ljb25CdXR0b24+XG4gICk7XG59O1xuXG5jb25zdCBtdWlUaGVtZSA9IGV4dGVuZE11aVRoZW1lKCk7XG5cbmNvbnN0IGpveVRoZW1lID0gZXh0ZW5kSm95VGhlbWUoe1xuICBjc3NWYXJQcmVmaXg6IFwibXVpXCIsXG4gIGNvbG9yU2NoZW1lczoge1xuICAgIGxpZ2h0OiB7XG4gICAgICBwYWxldHRlOiB7XG4gICAgICAgIHByaW1hcnk6IHtcbiAgICAgICAgICAuLi5ibHVlLFxuICAgICAgICAgIHNvbGlkQ29sb3I6IFwidmFyKC0tbXVpLXBhbGV0dGUtcHJpbWFyeS1jb250cmFzdFRleHQpXCIsXG4gICAgICAgICAgc29saWRCZzogXCJ2YXIoLS1tdWktcGFsZXR0ZS1wcmltYXJ5LW1haW4pXCIsXG4gICAgICAgICAgc29saWRIb3ZlckJnOiBcInZhcigtLW11aS1wYWxldHRlLXByaW1hcnktZGFyaylcIixcbiAgICAgICAgICBwbGFpbkNvbG9yOiBcInZhcigtLW11aS1wYWxldHRlLXByaW1hcnktbWFpbilcIixcbiAgICAgICAgICBwbGFpbkhvdmVyQmc6XG4gICAgICAgICAgICBcInJnYmEodmFyKC0tbXVpLXBhbGV0dGUtcHJpbWFyeS1tYWluQ2hhbm5lbCkgLyB2YXIoLS1tdWktcGFsZXR0ZS1hY3Rpb24taG92ZXJPcGFjaXR5KSlcIixcbiAgICAgICAgICBwbGFpbkFjdGl2ZUJnOiBcInJnYmEodmFyKC0tbXVpLXBhbGV0dGUtcHJpbWFyeS1tYWluQ2hhbm5lbCkgLyAwLjMpXCIsXG4gICAgICAgICAgb3V0bGluZWRCb3JkZXI6IFwicmdiYSh2YXIoLS1tdWktcGFsZXR0ZS1wcmltYXJ5LW1haW5DaGFubmVsKSAvIDAuNSlcIixcbiAgICAgICAgICBvdXRsaW5lZENvbG9yOiBcInZhcigtLW11aS1wYWxldHRlLXByaW1hcnktbWFpbilcIixcbiAgICAgICAgICBvdXRsaW5lZEhvdmVyQmc6XG4gICAgICAgICAgICBcInJnYmEodmFyKC0tbXVpLXBhbGV0dGUtcHJpbWFyeS1tYWluQ2hhbm5lbCkgLyB2YXIoLS1tdWktcGFsZXR0ZS1hY3Rpb24taG92ZXJPcGFjaXR5KSlcIixcbiAgICAgICAgICBvdXRsaW5lZEhvdmVyQm9yZGVyOiBcInZhcigtLW11aS1wYWxldHRlLXByaW1hcnktbWFpbilcIixcbiAgICAgICAgICBvdXRsaW5lZEFjdGl2ZUJnOlxuICAgICAgICAgICAgXCJyZ2JhKHZhcigtLW11aS1wYWxldHRlLXByaW1hcnktbWFpbkNoYW5uZWwpIC8gMC4zKVwiLFxuICAgICAgICB9LFxuICAgICAgICBuZXV0cmFsOiB7XG4gICAgICAgICAgLi4uZ3JleSxcbiAgICAgICAgfSxcbiAgICAgICAgZGl2aWRlcjogXCJ2YXIoLS1tdWktcGFsZXR0ZS1kaXZpZGVyKVwiLFxuICAgICAgICB0ZXh0OiB7XG4gICAgICAgICAgdGVydGlhcnk6IFwicmdiYSgwIDAgMCAvIDAuNTYpXCIsXG4gICAgICAgIH0sXG4gICAgICB9LFxuICAgIH0sXG4gICAgZGFyazoge1xuICAgICAgcGFsZXR0ZToge1xuICAgICAgICBwcmltYXJ5OiB7XG4gICAgICAgICAgLi4uYmx1ZSxcbiAgICAgICAgICBzb2xpZENvbG9yOiBcInZhcigtLW11aS1wYWxldHRlLXByaW1hcnktY29udHJhc3RUZXh0KVwiLFxuICAgICAgICAgIHNvbGlkQmc6IFwidmFyKC0tbXVpLXBhbGV0dGUtcHJpbWFyeS1tYWluKVwiLFxuICAgICAgICAgIHNvbGlkSG92ZXJCZzogXCJ2YXIoLS1tdWktcGFsZXR0ZS1wcmltYXJ5LWRhcmspXCIsXG4gICAgICAgICAgcGxhaW5Db2xvcjogXCJ2YXIoLS1tdWktcGFsZXR0ZS1wcmltYXJ5LW1haW4pXCIsXG4gICAgICAgICAgcGxhaW5Ib3ZlckJnOlxuICAgICAgICAgICAgXCJyZ2JhKHZhcigtLW11aS1wYWxldHRlLXByaW1hcnktbWFpbkNoYW5uZWwpIC8gdmFyKC0tbXVpLXBhbGV0dGUtYWN0aW9uLWhvdmVyT3BhY2l0eSkpXCIsXG4gICAgICAgICAgcGxhaW5BY3RpdmVCZzogXCJyZ2JhKHZhcigtLW11aS1wYWxldHRlLXByaW1hcnktbWFpbkNoYW5uZWwpIC8gMC4zKVwiLFxuICAgICAgICAgIG91dGxpbmVkQm9yZGVyOiBcInJnYmEodmFyKC0tbXVpLXBhbGV0dGUtcHJpbWFyeS1tYWluQ2hhbm5lbCkgLyAwLjUpXCIsXG4gICAgICAgICAgb3V0bGluZWRDb2xvcjogXCJ2YXIoLS1tdWktcGFsZXR0ZS1wcmltYXJ5LW1haW4pXCIsXG4gICAgICAgICAgb3V0bGluZWRIb3ZlckJnOlxuICAgICAgICAgICAgXCJyZ2JhKHZhcigtLW11aS1wYWxldHRlLXByaW1hcnktbWFpbkNoYW5uZWwpIC8gdmFyKC0tbXVpLXBhbGV0dGUtYWN0aW9uLWhvdmVyT3BhY2l0eSkpXCIsXG4gICAgICAgICAgb3V0bGluZWRIb3ZlckJvcmRlcjogXCJ2YXIoLS1tdWktcGFsZXR0ZS1wcmltYXJ5LW1haW4pXCIsXG4gICAgICAgICAgb3V0bGluZWRBY3RpdmVCZzpcbiAgICAgICAgICAgIFwicmdiYSh2YXIoLS1tdWktcGFsZXR0ZS1wcmltYXJ5LW1haW5DaGFubmVsKSAvIDAuMylcIixcbiAgICAgICAgfSxcbiAgICAgICAgbmV1dHJhbDoge1xuICAgICAgICAgIC4uLmdyZXksXG4gICAgICAgIH0sXG4gICAgICAgIGRpdmlkZXI6IFwidmFyKC0tbXVpLXBhbGV0dGUtZGl2aWRlcilcIixcbiAgICAgICAgdGV4dDoge1xuICAgICAgICAgIHRlcnRpYXJ5OiBcInJnYmEoMjU1IDI1NSAyNTUgLyAwLjUpXCIsXG4gICAgICAgIH0sXG4gICAgICB9LFxuICAgIH0sXG4gIH0sXG4gIGZvbnRGYW1pbHk6IHtcbiAgICBkaXNwbGF5OiAnXCJSb2JvdG9cIixcIkhlbHZldGljYVwiLFwiQXJpYWxcIixzYW5zLXNlcmlmJyxcbiAgICBib2R5OiAnXCJSb2JvdG9cIixcIkhlbHZldGljYVwiLFwiQXJpYWxcIixzYW5zLXNlcmlmJyxcbiAgfSxcbiAgc2hhZG93OiB7XG4gICAgeHM6IGB2YXIoLS1tdWktc2hhZG93UmluZyksICR7bXVpVGhlbWUuc2hhZG93c1sxXX1gLFxuICAgIHNtOiBgdmFyKC0tbXVpLXNoYWRvd1JpbmcpLCAke211aVRoZW1lLnNoYWRvd3NbMl19YCxcbiAgICBtZDogYHZhcigtLW11aS1zaGFkb3dSaW5nKSwgJHttdWlUaGVtZS5zaGFkb3dzWzRdfWAsXG4gICAgbGc6IGB2YXIoLS1tdWktc2hhZG93UmluZyksICR7bXVpVGhlbWUuc2hhZG93c1s4XX1gLFxuICAgIHhsOiBgdmFyKC0tbXVpLXNoYWRvd1JpbmcpLCAke211aVRoZW1lLnNoYWRvd3NbMTJdfWAsXG4gIH0sXG59KTtcblxuY29uc3QgZGFya1RoZW1lID0gY3JlYXRlVGhlbWUoeyB0eXBlOiBcImRhcmtcIiB9KTtcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gTXlBcHAoeyBDb21wb25lbnQsIHBhZ2VQcm9wcyB9OiBBcHBQcm9wcykge1xuICByZXR1cm4gKFxuICAgIC8vIDxDc3NWYXJzUHJvdmlkZXIgdGhlbWU9e2RlZXBtZXJnZShqb3lUaGVtZSwgbXVpVGhlbWUpfT5cbiAgICA8VGhlbWVQcm92aWRlciB0aGVtZT17dGhlbWV9PlxuICAgICAgey8qIENzc0Jhc2VsaW5lIGtpY2tzdGFydHMgYW4gZWxlZ2FudCwgY29uc2lzdGVudCwgYW5kIHNpbXBsZSBiYXNlbGluZSB0byBidWlsZCB1cG9uLiAqL31cbiAgICAgIDxDc3NCYXNlbGluZSAvPlxuICAgICAgey8qIDxOZXh0VUlQcm92aWRlciB0aGVtZT17ZGFya1RoZW1lfT4gKi99XG4gICAgICA8Q29tcG9uZW50IHsuLi5wYWdlUHJvcHN9IC8+XG4gICAgICB7LyogPC9OZXh0VUlQcm92aWRlcj4gKi99XG4gICAgPC9UaGVtZVByb3ZpZGVyPlxuICAgIC8vIDwvQ3NzVmFyc1Byb3ZpZGVyPlxuICApO1xufVxuIl0sIm5hbWVzIjpbImNyZWF0ZVRoZW1lIiwiVGhlbWVQcm92aWRlciIsIkNzc0Jhc2VsaW5lIiwidGhlbWUiLCJSZWFjdCIsInVzZUNvbG9yU2NoZW1lIiwiZXhwZXJpbWVudGFsX2V4dGVuZFRoZW1lIiwiZXh0ZW5kTXVpVGhlbWUiLCJibHVlIiwiZ3JleSIsImV4dGVuZFRoZW1lIiwiZXh0ZW5kSm95VGhlbWUiLCJEYXJrTW9kZSIsIkxpZ2h0TW9kZSIsIkljb25CdXR0b24iLCJNb2RlVG9nZ2xlIiwibW9kZSIsInNldE1vZGUiLCJtb3VudGVkIiwic2V0TW91bnRlZCIsInVzZVN0YXRlIiwidXNlRWZmZWN0Iiwib25DbGljayIsIm11aVRoZW1lIiwiam95VGhlbWUiLCJjc3NWYXJQcmVmaXgiLCJjb2xvclNjaGVtZXMiLCJsaWdodCIsInBhbGV0dGUiLCJwcmltYXJ5Iiwic29saWRDb2xvciIsInNvbGlkQmciLCJzb2xpZEhvdmVyQmciLCJwbGFpbkNvbG9yIiwicGxhaW5Ib3ZlckJnIiwicGxhaW5BY3RpdmVCZyIsIm91dGxpbmVkQm9yZGVyIiwib3V0bGluZWRDb2xvciIsIm91dGxpbmVkSG92ZXJCZyIsIm91dGxpbmVkSG92ZXJCb3JkZXIiLCJvdXRsaW5lZEFjdGl2ZUJnIiwibmV1dHJhbCIsImRpdmlkZXIiLCJ0ZXh0IiwidGVydGlhcnkiLCJkYXJrIiwiZm9udEZhbWlseSIsImRpc3BsYXkiLCJib2R5Iiwic2hhZG93IiwieHMiLCJzaGFkb3dzIiwic20iLCJtZCIsImxnIiwieGwiLCJkYXJrVGhlbWUiLCJ0eXBlIiwiTXlBcHAiLCJDb21wb25lbnQiLCJwYWdlUHJvcHMiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./pages/_app.tsx\n");
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ MyApp)
+});
+
+// EXTERNAL MODULE: external "react/jsx-runtime"
+var jsx_runtime_ = __webpack_require__(997);
+// EXTERNAL MODULE: ./styles/globals.css
+var globals = __webpack_require__(6764);
+;// CONCATENATED MODULE: external "@nextui-org/react"
+const react_namespaceObject = require("@nextui-org/react");
+;// CONCATENATED MODULE: external "@mui/material/styles"
+const styles_namespaceObject = require("@mui/material/styles");
+;// CONCATENATED MODULE: external "@mui/material/CssBaseline"
+const CssBaseline_namespaceObject = require("@mui/material/CssBaseline");
+var CssBaseline_default = /*#__PURE__*/__webpack_require__.n(CssBaseline_namespaceObject);
+;// CONCATENATED MODULE: external "@mui/material/colors"
+const colors_namespaceObject = require("@mui/material/colors");
+;// CONCATENATED MODULE: ./src/theme.ts
+
+
+//Create a theme instance.
+let theme = (0,styles_namespaceObject.createTheme)({
+    breakpoints: {
+        values: {
+            xs: 0,
+            sm: 640,
+            md: 1024,
+            lg: 1285,
+            xl: 1536
+        }
+    },
+    palette: {
+        primary: {
+            main: "#263238"
+        },
+        secondary: {
+            main: "#19857b"
+        },
+        error: {
+            main: colors_namespaceObject.red.A400
+        }
+    },
+    typography: {
+        fontFamily: [
+            "Poppins"
+        ].join(","),
+        h1: {
+            fontSize: "3.6rem"
+        },
+        h2: {
+            fontSize: "2.71rem"
+        },
+        h4: {
+            fontSize: "1.5rem",
+            fontWeight: "400"
+        },
+        h6: {
+            fontSize: "1.14rem"
+        },
+        h7: {
+            fontWeight: "500",
+            fontSize: "32px",
+            letterSpacing: "1px"
+        },
+        h8: {
+            fontWeight: "500",
+            fontSize: "24px",
+            letterSpacing: "1px"
+        },
+        bodyLarge: {
+            fontWeight: "400",
+            fontSize: "24px",
+            letterSpacing: "1px"
+        },
+        bodyMedium: {
+            fontWeight: "500",
+            fontSize: "18px",
+            letterSpacing: "1px"
+        },
+        bodyRegular: {
+            fontWeight: "400",
+            fontSize: "18px",
+            letterSpacing: "1px"
+        },
+        bodySmall: {
+            fontWeight: "400",
+            fontSize: "16px",
+            letterSpacing: "1px"
+        },
+        bodyExtraSmall: {
+            fontWeight: "400",
+            fontSize: "14px",
+            letterSpacing: "1px"
+        },
+        bodyExtraExtraSmall: {
+            fontWeight: "400",
+            fontSize: "12px",
+            letterSpacing: "1px"
+        },
+        linkLarge: {
+            fontWeight: "600",
+            fontSize: "24px",
+            letterSpacing: "1px"
+        },
+        linkMedium: {
+            fontWeight: "700",
+            fontSize: "18px",
+            letterSpacing: "1px"
+        },
+        linkSmall: {
+            fontWeight: "600",
+            fontSize: "16px",
+            letterSpacing: "1px"
+        },
+        linkExtraSmall: {
+            fontWeight: "600",
+            fontSize: "14px",
+            letterSpacing: "1px"
+        },
+        buttonLarge: {
+            fontWeight: "400",
+            fontSize: "18px",
+            letterSpacing: "1px"
+        },
+        buttonSmall: {
+            fontWeight: "400",
+            fontSize: "16px",
+            letterSpacing: "1px"
+        },
+        buttonExtraSmall: {
+            fontWeight: "500",
+            fontSize: "13px",
+            letterSpacing: "1px"
+        },
+        overlineLabel: {
+            fontWeight: "700",
+            letterSpacing: "0px"
+        }
+    },
+    components: {
+        MuiButton: {
+            variants: [
+                {
+                    props: {
+                        variant: "primary"
+                    },
+                    style: {
+                        textTransform: "none",
+                        width: "199px",
+                        height: "48px",
+                        backgroundColor: "#263238",
+                        color: "#F4FBFE",
+                        borderRadius: "50px",
+                        fontSize: "18px"
+                    }
+                },
+                {
+                    props: {
+                        variant: "secondary"
+                    },
+                    style: {
+                        textTransform: "none",
+                        width: "199px",
+                        height: "48px",
+                        color: "#263238",
+                        borderRadius: "50px",
+                        fontSize: "18px",
+                        fontWeight: "400",
+                        border: "1px solid #263238",
+                        "&:hover": {
+                            border: "1px solid #5A6859"
+                        }
+                    }
+                },
+                {
+                    props: {
+                        variant: "customDisabled"
+                    },
+                    style: {
+                        textTransform: "none",
+                        maxWidth: "199px",
+                        height: "48px",
+                        backgroundColor: "#D1D5DB",
+                        color: "#F4FBFE",
+                        borderRadius: "50px",
+                        cursor: "not-allowed"
+                    }
+                },
+                {
+                    props: {
+                        variant: "outlined"
+                    },
+                    style: {
+                        textTransform: "none",
+                        maxWidth: "199px",
+                        height: "48px",
+                        color: "Black",
+                        borderRadius: "50px"
+                    }
+                },
+                {
+                    props: {
+                        variant: "pressed"
+                    },
+                    style: {
+                        textTransform: "none",
+                        width: "199px",
+                        height: "48px",
+                        backgroundColor: "#424D3E",
+                        color: "#F4FBFE",
+                        borderRadius: "50px"
+                    }
+                },
+                {
+                    props: {
+                        variant: "menuButton"
+                    },
+                    style: {
+                        textTransform: "none",
+                        width: "199px",
+                        height: "48px",
+                        backgroundColor: "#1F2937",
+                        color: "#F4FBFE",
+                        borderRadius: "50px"
+                    }
+                },
+                {
+                    props: {
+                        variant: "signUp"
+                    },
+                    style: {
+                        textTransform: "none",
+                        width: "104px",
+                        height: "32px",
+                        color: "#566551",
+                        borderRadius: "50px",
+                        border: "1px solid #566551"
+                    }
+                }
+            ],
+            styleOverrides: {
+                root: ({ ownerState  })=>({
+                        ...ownerState.variant !== "customDisabled" && {
+                            "&:hover": {
+                                backgroundColor: "#9DB794"
+                            }
+                        },
+                        ...ownerState.variant === "customDisabled" && {
+                            "&:hover": {
+                                backgroundColor: "#D1D5DB",
+                                cursor: "not-allowed"
+                            }
+                        }
+                    })
+            }
+        }
+    }
+});
+theme = (0,styles_namespaceObject.responsiveFontSizes)(theme);
+/* harmony default export */ const src_theme = (theme);
+
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(6689);
+;// CONCATENATED MODULE: external "@mui/joy/styles"
+const joy_styles_namespaceObject = require("@mui/joy/styles");
+;// CONCATENATED MODULE: external "@mui/icons-material/DarkMode"
+const DarkMode_namespaceObject = require("@mui/icons-material/DarkMode");
+;// CONCATENATED MODULE: external "@mui/icons-material/LightMode"
+const LightMode_namespaceObject = require("@mui/icons-material/LightMode");
+;// CONCATENATED MODULE: external "@mui/joy/IconButton"
+const IconButton_namespaceObject = require("@mui/joy/IconButton");
+;// CONCATENATED MODULE: ./pages/_app.tsx
+
+
+
+// Used to manage localization in the app
+// import { NextIntlProvider } from 'next-intl'
+// Import MUI components
+
+
+// Import Custom components
+
+// Import JoyUI components
+
+
+
+
+// Icons
+
+
+
+const ModeToggle = ()=>{
+    const { mode , setMode  } = useColorScheme();
+    const [mounted, setMounted] = React.useState(false);
+    React.useEffect(()=>{
+        setMounted(true);
+    }, []);
+    if (!mounted) {
+        return null;
+    }
+    return /*#__PURE__*/ _jsx(IconButton, {
+        onClick: ()=>setMode(mode === "dark" ? "light" : "dark"),
+        children: mode === "dark" ? /*#__PURE__*/ _jsx(DarkMode, {}) : /*#__PURE__*/ _jsx(LightMode, {})
+    });
+};
+const muiTheme = (0,styles_namespaceObject.experimental_extendTheme)();
+const joyTheme = (0,joy_styles_namespaceObject.extendTheme)({
+    cssVarPrefix: "mui",
+    colorSchemes: {
+        light: {
+            palette: {
+                primary: {
+                    ...colors_namespaceObject.blue,
+                    solidColor: "var(--mui-palette-primary-contrastText)",
+                    solidBg: "var(--mui-palette-primary-main)",
+                    solidHoverBg: "var(--mui-palette-primary-dark)",
+                    plainColor: "var(--mui-palette-primary-main)",
+                    plainHoverBg: "rgba(var(--mui-palette-primary-mainChannel) / var(--mui-palette-action-hoverOpacity))",
+                    plainActiveBg: "rgba(var(--mui-palette-primary-mainChannel) / 0.3)",
+                    outlinedBorder: "rgba(var(--mui-palette-primary-mainChannel) / 0.5)",
+                    outlinedColor: "var(--mui-palette-primary-main)",
+                    outlinedHoverBg: "rgba(var(--mui-palette-primary-mainChannel) / var(--mui-palette-action-hoverOpacity))",
+                    outlinedHoverBorder: "var(--mui-palette-primary-main)",
+                    outlinedActiveBg: "rgba(var(--mui-palette-primary-mainChannel) / 0.3)"
+                },
+                neutral: {
+                    ...colors_namespaceObject.grey
+                },
+                divider: "var(--mui-palette-divider)",
+                text: {
+                    tertiary: "rgba(0 0 0 / 0.56)"
+                }
+            }
+        },
+        dark: {
+            palette: {
+                primary: {
+                    ...colors_namespaceObject.blue,
+                    solidColor: "var(--mui-palette-primary-contrastText)",
+                    solidBg: "var(--mui-palette-primary-main)",
+                    solidHoverBg: "var(--mui-palette-primary-dark)",
+                    plainColor: "var(--mui-palette-primary-main)",
+                    plainHoverBg: "rgba(var(--mui-palette-primary-mainChannel) / var(--mui-palette-action-hoverOpacity))",
+                    plainActiveBg: "rgba(var(--mui-palette-primary-mainChannel) / 0.3)",
+                    outlinedBorder: "rgba(var(--mui-palette-primary-mainChannel) / 0.5)",
+                    outlinedColor: "var(--mui-palette-primary-main)",
+                    outlinedHoverBg: "rgba(var(--mui-palette-primary-mainChannel) / var(--mui-palette-action-hoverOpacity))",
+                    outlinedHoverBorder: "var(--mui-palette-primary-main)",
+                    outlinedActiveBg: "rgba(var(--mui-palette-primary-mainChannel) / 0.3)"
+                },
+                neutral: {
+                    ...colors_namespaceObject.grey
+                },
+                divider: "var(--mui-palette-divider)",
+                text: {
+                    tertiary: "rgba(255 255 255 / 0.5)"
+                }
+            }
+        }
+    },
+    fontFamily: {
+        display: '"Roboto","Helvetica","Arial",sans-serif',
+        body: '"Roboto","Helvetica","Arial",sans-serif'
+    },
+    shadow: {
+        xs: `var(--mui-shadowRing), ${muiTheme.shadows[1]}`,
+        sm: `var(--mui-shadowRing), ${muiTheme.shadows[2]}`,
+        md: `var(--mui-shadowRing), ${muiTheme.shadows[4]}`,
+        lg: `var(--mui-shadowRing), ${muiTheme.shadows[8]}`,
+        xl: `var(--mui-shadowRing), ${muiTheme.shadows[12]}`
+    }
+});
+const darkTheme = (0,react_namespaceObject.createTheme)({
+    type: "dark"
+});
+function MyApp({ Component , pageProps  }) {
+    return(// <CssVarsProvider theme={deepmerge(joyTheme, muiTheme)}>
+    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(styles_namespaceObject.ThemeProvider, {
+        theme: src_theme,
+        children: [
+            /*#__PURE__*/ jsx_runtime_.jsx((CssBaseline_default()), {}),
+            /*#__PURE__*/ jsx_runtime_.jsx(Component, {
+                ...pageProps
+            })
+        ]
+    }));
+}
+
 
 /***/ }),
 
-/***/ "./src/theme.ts":
-/*!**********************!*\
-  !*** ./src/theme.ts ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _mui_material_styles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/material/styles */ \"@mui/material/styles\");\n/* harmony import */ var _mui_material_styles__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_mui_material_styles__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _mui_material_colors__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material/colors */ \"@mui/material/colors\");\n/* harmony import */ var _mui_material_colors__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_mui_material_colors__WEBPACK_IMPORTED_MODULE_1__);\n\n\n//Create a theme instance.\nlet theme = (0,_mui_material_styles__WEBPACK_IMPORTED_MODULE_0__.createTheme)({\n    breakpoints: {\n        values: {\n            xs: 0,\n            sm: 640,\n            md: 1024,\n            lg: 1285,\n            xl: 1536\n        }\n    },\n    palette: {\n        primary: {\n            main: \"#263238\"\n        },\n        secondary: {\n            main: \"#19857b\"\n        },\n        error: {\n            main: _mui_material_colors__WEBPACK_IMPORTED_MODULE_1__.red.A400\n        }\n    },\n    typography: {\n        fontFamily: [\n            \"Poppins\"\n        ].join(\",\"),\n        h1: {\n            fontSize: \"3.6rem\"\n        },\n        h2: {\n            fontSize: \"2.71rem\"\n        },\n        h4: {\n            fontSize: \"1.5rem\",\n            fontWeight: \"400\"\n        },\n        h6: {\n            fontSize: \"1.14rem\"\n        },\n        h7: {\n            fontWeight: \"500\",\n            fontSize: \"32px\",\n            letterSpacing: \"1px\"\n        },\n        h8: {\n            fontWeight: \"500\",\n            fontSize: \"24px\",\n            letterSpacing: \"1px\"\n        },\n        bodyLarge: {\n            fontWeight: \"400\",\n            fontSize: \"24px\",\n            letterSpacing: \"1px\"\n        },\n        bodyMedium: {\n            fontWeight: \"500\",\n            fontSize: \"18px\",\n            letterSpacing: \"1px\"\n        },\n        bodyRegular: {\n            fontWeight: \"400\",\n            fontSize: \"18px\",\n            letterSpacing: \"1px\"\n        },\n        bodySmall: {\n            fontWeight: \"400\",\n            fontSize: \"16px\",\n            letterSpacing: \"1px\"\n        },\n        bodyExtraSmall: {\n            fontWeight: \"400\",\n            fontSize: \"14px\",\n            letterSpacing: \"1px\"\n        },\n        bodyExtraExtraSmall: {\n            fontWeight: \"400\",\n            fontSize: \"12px\",\n            letterSpacing: \"1px\"\n        },\n        linkLarge: {\n            fontWeight: \"600\",\n            fontSize: \"24px\",\n            letterSpacing: \"1px\"\n        },\n        linkMedium: {\n            fontWeight: \"700\",\n            fontSize: \"18px\",\n            letterSpacing: \"1px\"\n        },\n        linkSmall: {\n            fontWeight: \"600\",\n            fontSize: \"16px\",\n            letterSpacing: \"1px\"\n        },\n        linkExtraSmall: {\n            fontWeight: \"600\",\n            fontSize: \"14px\",\n            letterSpacing: \"1px\"\n        },\n        buttonLarge: {\n            fontWeight: \"400\",\n            fontSize: \"18px\",\n            letterSpacing: \"1px\"\n        },\n        buttonSmall: {\n            fontWeight: \"400\",\n            fontSize: \"16px\",\n            letterSpacing: \"1px\"\n        },\n        buttonExtraSmall: {\n            fontWeight: \"500\",\n            fontSize: \"13px\",\n            letterSpacing: \"1px\"\n        },\n        overlineLabel: {\n            fontWeight: \"700\",\n            letterSpacing: \"0px\"\n        }\n    },\n    components: {\n        MuiButton: {\n            variants: [\n                {\n                    props: {\n                        variant: \"primary\"\n                    },\n                    style: {\n                        textTransform: \"none\",\n                        width: \"199px\",\n                        height: \"48px\",\n                        backgroundColor: \"#263238\",\n                        color: \"#F4FBFE\",\n                        borderRadius: \"50px\",\n                        fontSize: \"18px\"\n                    }\n                },\n                {\n                    props: {\n                        variant: \"secondary\"\n                    },\n                    style: {\n                        textTransform: \"none\",\n                        width: \"199px\",\n                        height: \"48px\",\n                        color: \"#263238\",\n                        borderRadius: \"50px\",\n                        fontSize: \"18px\",\n                        fontWeight: \"400\",\n                        border: \"1px solid #263238\",\n                        \"&:hover\": {\n                            border: \"1px solid #5A6859\"\n                        }\n                    }\n                },\n                {\n                    props: {\n                        variant: \"customDisabled\"\n                    },\n                    style: {\n                        textTransform: \"none\",\n                        maxWidth: \"199px\",\n                        height: \"48px\",\n                        backgroundColor: \"#D1D5DB\",\n                        color: \"#F4FBFE\",\n                        borderRadius: \"50px\",\n                        cursor: \"not-allowed\"\n                    }\n                },\n                {\n                    props: {\n                        variant: \"outlined\"\n                    },\n                    style: {\n                        textTransform: \"none\",\n                        maxWidth: \"199px\",\n                        height: \"48px\",\n                        color: \"Black\",\n                        borderRadius: \"50px\"\n                    }\n                },\n                {\n                    props: {\n                        variant: \"pressed\"\n                    },\n                    style: {\n                        textTransform: \"none\",\n                        width: \"199px\",\n                        height: \"48px\",\n                        backgroundColor: \"#424D3E\",\n                        color: \"#F4FBFE\",\n                        borderRadius: \"50px\"\n                    }\n                },\n                {\n                    props: {\n                        variant: \"menuButton\"\n                    },\n                    style: {\n                        textTransform: \"none\",\n                        width: \"199px\",\n                        height: \"48px\",\n                        backgroundColor: \"#1F2937\",\n                        color: \"#F4FBFE\",\n                        borderRadius: \"50px\"\n                    }\n                },\n                {\n                    props: {\n                        variant: \"signUp\"\n                    },\n                    style: {\n                        textTransform: \"none\",\n                        width: \"104px\",\n                        height: \"32px\",\n                        color: \"#566551\",\n                        borderRadius: \"50px\",\n                        border: \"1px solid #566551\"\n                    }\n                }\n            ],\n            styleOverrides: {\n                root: ({ ownerState  })=>({\n                        ...ownerState.variant !== \"customDisabled\" && {\n                            \"&:hover\": {\n                                backgroundColor: \"#9DB794\"\n                            }\n                        },\n                        ...ownerState.variant === \"customDisabled\" && {\n                            \"&:hover\": {\n                                backgroundColor: \"#D1D5DB\",\n                                cursor: \"not-allowed\"\n                            }\n                        }\n                    })\n            }\n        }\n    }\n});\ntheme = (0,_mui_material_styles__WEBPACK_IMPORTED_MODULE_0__.responsiveFontSizes)(theme);\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (theme);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,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cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQ1NTUHJvcGVydGllcyB9IGZyb20gXCJyZWFjdFwiO1xuaW1wb3J0IHsgY3JlYXRlVGhlbWUsIHJlc3BvbnNpdmVGb250U2l6ZXMgfSBmcm9tIFwiQG11aS9tYXRlcmlhbC9zdHlsZXNcIjtcbmltcG9ydCB7IHJlZCB9IGZyb20gXCJAbXVpL21hdGVyaWFsL2NvbG9yc1wiO1xuXG5kZWNsYXJlIG1vZHVsZSBcIkBtdWkvbWF0ZXJpYWwvQnV0dG9uXCIge1xuICAvLyBlc2xpbnQtZGlzYWJsZS1uZXh0LWxpbmUgbm8tdW51c2VkLXZhcnNcbiAgaW50ZXJmYWNlIEJ1dHRvblByb3BzVmFyaWFudE92ZXJyaWRlcyB7XG4gICAgZGFzaGVkOiB0cnVlO1xuICAgIHByaW1hcnk6IHRydWU7XG4gICAgc2Vjb25kYXJ5OiB0cnVlO1xuICAgIGN1c3RvbURpc2FibGVkOiB0cnVlOyAvLyBjcmVhdGVkIGEgY3VzdG9tRGlzYWJsZWQgdmFyaWFudCBpbnN0ZWFkIG9mIGRpc2FibGVkIHRvIGVuYWJsZSBtb3VzZS1wb2ludGVyIGRpc2FibGVkIHN0YXRlICh0aGlzIGlzIG5vdCBwb3NzaWJsZSB3aXRoIHRoZSBkZWZhdWx0IGRpc2FibGVkIE1VSSBzdHlsZXMpXG4gICAgbWVudUJ1dHRvbjogdHJ1ZTtcbiAgICBwcmVzc2VkOiB0cnVlO1xuICAgIHNpZ25VcDogdHJ1ZTtcbiAgfVxufVxuXG5kZWNsYXJlIG1vZHVsZSBcIkBtdWkvbWF0ZXJpYWwvc3R5bGVzXCIge1xuICAvLyBlc2xpbnQtZGlzYWJsZS1uZXh0LWxpbmUgbm8tdXNlZC12YXJzXG4gIGludGVyZmFjZSBUeXBvZ3JhcGh5VmFyaWFudHMge1xuICAgIGg3OiB0cnVlO1xuICAgIGg4OiB0cnVlO1xuICAgIGJvZHlMYXJnZTogdHJ1ZTtcbiAgICBib2R5TWVkaXVtOiB0cnVlO1xuICAgIGJvZHlSZWd1bGFyOiB0cnVlO1xuICAgIGJvZHlTbWFsbDogdHJ1ZTtcbiAgICBib2R5RXh0cmFTbWFsbDogdHJ1ZTtcbiAgICBib2R5RXh0cmFFeHRyYVNtYWxsOiB0cnVlO1xuICAgIGxpbmtMYXJnZTogdHJ1ZTtcbiAgICBsaW5rTWVkaXVtOiB0cnVlO1xuICAgIGxpbmtTbWFsbDogdHJ1ZTtcbiAgICBsaW5rRXh0cmFTbWFsbDogdHJ1ZTtcbiAgICBidXR0b25MYXJnZTogdHJ1ZTtcbiAgICBidXR0b25TbWFsbDogdHJ1ZTtcbiAgICBidXR0b25FeHRyYVNtYWxsOiB0cnVlO1xuICAgIGxhYmVsOiB0cnVlO1xuICB9XG5cbiAgLy8gYWxsb3cgY29uZmlndXJhdGlvbiB1c2luZyAnY3JlYXRlVGhlbWUnXG4gIC8vIGVzbGludC1kaXNhYmxlLW5leHQtbGluZSBuby11bnVzZWQtdmFyc1xuICBpbnRlcmZhY2UgVHlwb2dyYXBoeVZhcmlhbnRzT3B0aW9ucyB7XG4gICAgaDc6IENTU1Byb3BlcnRpZXM7XG4gICAgaDg6IENTU1Byb3BlcnRpZXM7XG4gICAgYm9keUxhcmdlOiBDU1NQcm9wZXJ0aWVzO1xuICAgIGJvZHlNZWRpdW06IENTU1Byb3BlcnRpZXM7XG4gICAgYm9keVJlZ3VsYXI6IENTU1Byb3BlcnRpZXM7XG4gICAgYm9keVNtYWxsOiBDU1NQcm9wZXJ0aWVzO1xuICAgIGJvZHlFeHRyYVNtYWxsOiBDU1NQcm9wZXJ0aWVzO1xuICAgIGJvZHlFeHRyYUV4dHJhU21hbGw6IENTU1Byb3BlcnRpZXM7XG4gICAgbGlua0xhcmdlOiBDU1NQcm9wZXJ0aWVzO1xuICAgIGxpbmtNZWRpdW06IENTU1Byb3BlcnRpZXM7XG4gICAgbGlua1NtYWxsOiBDU1NQcm9wZXJ0aWVzO1xuICAgIGxpbmtFeHRyYVNtYWxsOiBDU1NQcm9wZXJ0aWVzO1xuICAgIGJ1dHRvbkxhcmdlOiBDU1NQcm9wZXJ0aWVzO1xuICAgIGJ1dHRvblNtYWxsOiBDU1NQcm9wZXJ0aWVzO1xuICAgIGJ1dHRvbkV4dHJhU21hbGw6IENTU1Byb3BlcnRpZXM7XG4gICAgb3ZlcmxpbmVMYWJlbDogQ1NTUHJvcGVydGllcztcbiAgfVxufVxuZGVjbGFyZSBtb2R1bGUgXCJAbXVpL21hdGVyaWFsL1R5cG9ncmFwaHlcIiB7XG4gIC8vIGFsbG93IHRoZW1lIG92ZXIgcmlkZXNcbiAgLy8gZXNsaW50LWRpc2FibGUtbmV4dC1saW5lIG5vLXVudXNlZC12YXJzXG4gIGludGVyZmFjZSBUeXBvZ3JhcGh5UHJvcHNWYXJpYW50T3ZlcnJpZGVzIHtcbiAgICBoNzogdHJ1ZTtcbiAgICBoODogdHJ1ZTtcbiAgICBib2R5TGFyZ2U6IHRydWU7XG4gICAgYm9keU1lZGl1bTogdHJ1ZTtcbiAgICBib2R5UmVndWxhcjogdHJ1ZTtcbiAgICBib2R5U21hbGw6IHRydWU7XG4gICAgYm9keUV4dHJhU21hbGw6IHRydWU7XG4gICAgYm9keUV4dHJhRXh0cmFTbWFsbDogdHJ1ZTtcbiAgICBsaW5rTGFyZ2U6IHRydWU7XG4gICAgbGlua01lZGl1bTogdHJ1ZTtcbiAgICBsaW5rU21hbGw6IHRydWU7XG4gICAgbGlua0V4dHJhU21hbGw6IHRydWU7XG4gICAgYnV0dG9uTGFyZ2U6IHRydWU7XG4gICAgYnV0dG9uU21hbGw6IHRydWU7XG4gICAgYnV0dG9uRXh0cmFTbWFsbDogdHJ1ZTtcbiAgICBvdmVybGluZUxhYmVsOiB0cnVlO1xuICB9XG59XG5cbi8vQ3JlYXRlIGEgdGhlbWUgaW5zdGFuY2UuXG5sZXQgdGhlbWUgPSBjcmVhdGVUaGVtZSh7XG4gIGJyZWFrcG9pbnRzOiB7XG4gICAgdmFsdWVzOiB7XG4gICAgICB4czogMCxcbiAgICAgIHNtOiA2NDAsXG4gICAgICBtZDogMTAyNCxcbiAgICAgIGxnOiAxMjg1LFxuICAgICAgeGw6IDE1MzYsXG4gICAgfSxcbiAgfSxcbiAgcGFsZXR0ZToge1xuICAgIHByaW1hcnk6IHtcbiAgICAgIG1haW46IFwiIzI2MzIzOFwiLFxuICAgIH0sXG4gICAgc2Vjb25kYXJ5OiB7XG4gICAgICBtYWluOiBcIiMxOTg1N2JcIixcbiAgICB9LFxuICAgIGVycm9yOiB7XG4gICAgICBtYWluOiByZWQuQTQwMCxcbiAgICB9LFxuICB9LFxuICB0eXBvZ3JhcGh5OiB7XG4gICAgZm9udEZhbWlseTogW1wiUG9wcGluc1wiXS5qb2luKFwiLFwiKSxcbiAgICBoMToge1xuICAgICAgZm9udFNpemU6IFwiMy42cmVtXCIsXG4gICAgfSxcbiAgICBoMjoge1xuICAgICAgZm9udFNpemU6IFwiMi43MXJlbVwiLFxuICAgIH0sXG4gICAgaDQ6IHtcbiAgICAgIGZvbnRTaXplOiBcIjEuNXJlbVwiLFxuICAgICAgZm9udFdlaWdodDogXCI0MDBcIixcbiAgICB9LFxuICAgIGg2OiB7XG4gICAgICBmb250U2l6ZTogXCIxLjE0cmVtXCIsXG4gICAgfSxcbiAgICBoNzoge1xuICAgICAgZm9udFdlaWdodDogXCI1MDBcIixcbiAgICAgIGZvbnRTaXplOiBcIjMycHhcIixcbiAgICAgIGxldHRlclNwYWNpbmc6IFwiMXB4XCIsXG4gICAgfSxcbiAgICBoODoge1xuICAgICAgZm9udFdlaWdodDogXCI1MDBcIixcbiAgICAgIGZvbnRTaXplOiBcIjI0cHhcIixcbiAgICAgIGxldHRlclNwYWNpbmc6IFwiMXB4XCIsXG4gICAgfSxcbiAgICBib2R5TGFyZ2U6IHtcbiAgICAgIGZvbnRXZWlnaHQ6IFwiNDAwXCIsXG4gICAgICBmb250U2l6ZTogXCIyNHB4XCIsXG4gICAgICBsZXR0ZXJTcGFjaW5nOiBcIjFweFwiLFxuICAgIH0sXG4gICAgYm9keU1lZGl1bToge1xuICAgICAgZm9udFdlaWdodDogXCI1MDBcIixcbiAgICAgIGZvbnRTaXplOiBcIjE4cHhcIixcbiAgICAgIGxldHRlclNwYWNpbmc6IFwiMXB4XCIsXG4gICAgfSxcbiAgICBib2R5UmVndWxhcjoge1xuICAgICAgZm9udFdlaWdodDogXCI0MDBcIixcbiAgICAgIGZvbnRTaXplOiBcIjE4cHhcIixcbiAgICAgIGxldHRlclNwYWNpbmc6IFwiMXB4XCIsXG4gICAgfSxcbiAgICBib2R5U21hbGw6IHtcbiAgICAgIGZvbnRXZWlnaHQ6IFwiNDAwXCIsXG4gICAgICBmb250U2l6ZTogXCIxNnB4XCIsXG4gICAgICBsZXR0ZXJTcGFjaW5nOiBcIjFweFwiLFxuICAgIH0sXG4gICAgYm9keUV4dHJhU21hbGw6IHtcbiAgICAgIGZvbnRXZWlnaHQ6IFwiNDAwXCIsXG4gICAgICBmb250U2l6ZTogXCIxNHB4XCIsXG4gICAgICBsZXR0ZXJTcGFjaW5nOiBcIjFweFwiLFxuICAgIH0sXG4gICAgYm9keUV4dHJhRXh0cmFTbWFsbDoge1xuICAgICAgZm9udFdlaWdodDogXCI0MDBcIixcbiAgICAgIGZvbnRTaXplOiBcIjEycHhcIixcbiAgICAgIGxldHRlclNwYWNpbmc6IFwiMXB4XCIsXG4gICAgfSxcbiAgICBsaW5rTGFyZ2U6IHtcbiAgICAgIGZvbnRXZWlnaHQ6IFwiNjAwXCIsXG4gICAgICBmb250U2l6ZTogXCIyNHB4XCIsXG4gICAgICBsZXR0ZXJTcGFjaW5nOiBcIjFweFwiLFxuICAgIH0sXG4gICAgbGlua01lZGl1bToge1xuICAgICAgZm9udFdlaWdodDogXCI3MDBcIixcbiAgICAgIGZvbnRTaXplOiBcIjE4cHhcIixcbiAgICAgIGxldHRlclNwYWNpbmc6IFwiMXB4XCIsXG4gICAgfSxcbiAgICBsaW5rU21hbGw6IHtcbiAgICAgIGZvbnRXZWlnaHQ6IFwiNjAwXCIsXG4gICAgICBmb250U2l6ZTogXCIxNnB4XCIsXG4gICAgICBsZXR0ZXJTcGFjaW5nOiBcIjFweFwiLFxuICAgIH0sXG4gICAgbGlua0V4dHJhU21hbGw6IHtcbiAgICAgIGZvbnRXZWlnaHQ6IFwiNjAwXCIsXG4gICAgICBmb250U2l6ZTogXCIxNHB4XCIsXG4gICAgICBsZXR0ZXJTcGFjaW5nOiBcIjFweFwiLFxuICAgIH0sXG4gICAgYnV0dG9uTGFyZ2U6IHtcbiAgICAgIGZvbnRXZWlnaHQ6IFwiNDAwXCIsXG4gICAgICBmb250U2l6ZTogXCIxOHB4XCIsXG4gICAgICBsZXR0ZXJTcGFjaW5nOiBcIjFweFwiLFxuICAgIH0sXG4gICAgYnV0dG9uU21hbGw6IHtcbiAgICAgIGZvbnRXZWlnaHQ6IFwiNDAwXCIsXG4gICAgICBmb250U2l6ZTogXCIxNnB4XCIsXG4gICAgICBsZXR0ZXJTcGFjaW5nOiBcIjFweFwiLFxuICAgIH0sXG4gICAgYnV0dG9uRXh0cmFTbWFsbDoge1xuICAgICAgZm9udFdlaWdodDogXCI1MDBcIixcbiAgICAgIGZvbnRTaXplOiBcIjEzcHhcIixcbiAgICAgIGxldHRlclNwYWNpbmc6IFwiMXB4XCIsXG4gICAgfSxcbiAgICBvdmVybGluZUxhYmVsOiB7XG4gICAgICBmb250V2VpZ2h0OiBcIjcwMFwiLFxuICAgICAgbGV0dGVyU3BhY2luZzogXCIwcHhcIixcbiAgICB9LFxuICB9LFxuICBjb21wb25lbnRzOiB7XG4gICAgTXVpQnV0dG9uOiB7XG4gICAgICB2YXJpYW50czogW1xuICAgICAgICB7XG4gICAgICAgICAgcHJvcHM6IHsgdmFyaWFudDogXCJwcmltYXJ5XCIgfSxcbiAgICAgICAgICBzdHlsZToge1xuICAgICAgICAgICAgdGV4dFRyYW5zZm9ybTogXCJub25lXCIsXG4gICAgICAgICAgICB3aWR0aDogXCIxOTlweFwiLFxuICAgICAgICAgICAgaGVpZ2h0OiBcIjQ4cHhcIixcbiAgICAgICAgICAgIGJhY2tncm91bmRDb2xvcjogXCIjMjYzMjM4XCIsXG4gICAgICAgICAgICBjb2xvcjogXCIjRjRGQkZFXCIsXG4gICAgICAgICAgICBib3JkZXJSYWRpdXM6IFwiNTBweFwiLFxuICAgICAgICAgICAgZm9udFNpemU6IFwiMThweFwiLFxuICAgICAgICAgIH0sXG4gICAgICAgIH0sXG4gICAgICAgIHtcbiAgICAgICAgICBwcm9wczogeyB2YXJpYW50OiBcInNlY29uZGFyeVwiIH0sXG4gICAgICAgICAgc3R5bGU6IHtcbiAgICAgICAgICAgIHRleHRUcmFuc2Zvcm06IFwibm9uZVwiLFxuICAgICAgICAgICAgd2lkdGg6IFwiMTk5cHhcIixcbiAgICAgICAgICAgIGhlaWdodDogXCI0OHB4XCIsXG4gICAgICAgICAgICBjb2xvcjogXCIjMjYzMjM4XCIsXG4gICAgICAgICAgICBib3JkZXJSYWRpdXM6IFwiNTBweFwiLFxuICAgICAgICAgICAgZm9udFNpemU6IFwiMThweFwiLFxuICAgICAgICAgICAgZm9udFdlaWdodDogXCI0MDBcIixcbiAgICAgICAgICAgIGJvcmRlcjogXCIxcHggc29saWQgIzI2MzIzOFwiLFxuICAgICAgICAgICAgXCImOmhvdmVyXCI6IHtcbiAgICAgICAgICAgICAgYm9yZGVyOiBcIjFweCBzb2xpZCAjNUE2ODU5XCIsXG4gICAgICAgICAgICB9LFxuICAgICAgICAgIH0sXG4gICAgICAgIH0sXG4gICAgICAgIHtcbiAgICAgICAgICBwcm9wczogeyB2YXJpYW50OiBcImN1c3RvbURpc2FibGVkXCIgfSxcbiAgICAgICAgICBzdHlsZToge1xuICAgICAgICAgICAgdGV4dFRyYW5zZm9ybTogXCJub25lXCIsXG4gICAgICAgICAgICBtYXhXaWR0aDogXCIxOTlweFwiLFxuICAgICAgICAgICAgaGVpZ2h0OiBcIjQ4cHhcIixcbiAgICAgICAgICAgIGJhY2tncm91bmRDb2xvcjogXCIjRDFENURCXCIsXG4gICAgICAgICAgICBjb2xvcjogXCIjRjRGQkZFXCIsXG4gICAgICAgICAgICBib3JkZXJSYWRpdXM6IFwiNTBweFwiLFxuICAgICAgICAgICAgY3Vyc29yOiBcIm5vdC1hbGxvd2VkXCIsXG4gICAgICAgICAgfSxcbiAgICAgICAgfSxcbiAgICAgICAge1xuICAgICAgICAgIHByb3BzOiB7IHZhcmlhbnQ6IFwib3V0bGluZWRcIiB9LFxuICAgICAgICAgIHN0eWxlOiB7XG4gICAgICAgICAgICB0ZXh0VHJhbnNmb3JtOiBcIm5vbmVcIixcbiAgICAgICAgICAgIG1heFdpZHRoOiBcIjE5OXB4XCIsXG4gICAgICAgICAgICBoZWlnaHQ6IFwiNDhweFwiLFxuICAgICAgICAgICAgY29sb3I6IFwiQmxhY2tcIixcbiAgICAgICAgICAgIGJvcmRlclJhZGl1czogXCI1MHB4XCIsXG4gICAgICAgICAgfSxcbiAgICAgICAgfSxcbiAgICAgICAge1xuICAgICAgICAgIHByb3BzOiB7IHZhcmlhbnQ6IFwicHJlc3NlZFwiIH0sXG4gICAgICAgICAgc3R5bGU6IHtcbiAgICAgICAgICAgIHRleHRUcmFuc2Zvcm06IFwibm9uZVwiLFxuICAgICAgICAgICAgd2lkdGg6IFwiMTk5cHhcIixcbiAgICAgICAgICAgIGhlaWdodDogXCI0OHB4XCIsXG4gICAgICAgICAgICBiYWNrZ3JvdW5kQ29sb3I6IFwiIzQyNEQzRVwiLFxuICAgICAgICAgICAgY29sb3I6IFwiI0Y0RkJGRVwiLFxuICAgICAgICAgICAgYm9yZGVyUmFkaXVzOiBcIjUwcHhcIixcbiAgICAgICAgICB9LFxuICAgICAgICB9LFxuICAgICAgICB7XG4gICAgICAgICAgcHJvcHM6IHsgdmFyaWFudDogXCJtZW51QnV0dG9uXCIgfSxcbiAgICAgICAgICBzdHlsZToge1xuICAgICAgICAgICAgdGV4dFRyYW5zZm9ybTogXCJub25lXCIsXG4gICAgICAgICAgICB3aWR0aDogXCIxOTlweFwiLFxuICAgICAgICAgICAgaGVpZ2h0OiBcIjQ4cHhcIixcbiAgICAgICAgICAgIGJhY2tncm91bmRDb2xvcjogXCIjMUYyOTM3XCIsXG4gICAgICAgICAgICBjb2xvcjogXCIjRjRGQkZFXCIsXG4gICAgICAgICAgICBib3JkZXJSYWRpdXM6IFwiNTBweFwiLFxuICAgICAgICAgIH0sXG4gICAgICAgIH0sXG4gICAgICAgIHtcbiAgICAgICAgICBwcm9wczogeyB2YXJpYW50OiBcInNpZ25VcFwiIH0sXG4gICAgICAgICAgc3R5bGU6IHtcbiAgICAgICAgICAgIHRleHRUcmFuc2Zvcm06IFwibm9uZVwiLFxuICAgICAgICAgICAgd2lkdGg6IFwiMTA0cHhcIixcbiAgICAgICAgICAgIGhlaWdodDogXCIzMnB4XCIsXG4gICAgICAgICAgICBjb2xvcjogXCIjNTY2NTUxXCIsXG4gICAgICAgICAgICBib3JkZXJSYWRpdXM6IFwiNTBweFwiLFxuICAgICAgICAgICAgYm9yZGVyOiBcIjFweCBzb2xpZCAjNTY2NTUxXCIsXG4gICAgICAgICAgfSxcbiAgICAgICAgfSxcbiAgICAgIF0sXG5cbiAgICAgIHN0eWxlT3ZlcnJpZGVzOiB7XG4gICAgICAgIHJvb3Q6ICh7IG93bmVyU3RhdGUgfSkgPT4gKHtcbiAgICAgICAgICAuLi4ob3duZXJTdGF0ZS52YXJpYW50ICE9PSBcImN1c3RvbURpc2FibGVkXCIgJiYge1xuICAgICAgICAgICAgXCImOmhvdmVyXCI6IHsgYmFja2dyb3VuZENvbG9yOiBcIiM5REI3OTRcIiB9LFxuICAgICAgICAgIH0pLFxuICAgICAgICAgIC4uLihvd25lclN0YXRlLnZhcmlhbnQgPT09IFwiY3VzdG9tRGlzYWJsZWRcIiAmJiB7XG4gICAgICAgICAgICBcIiY6aG92ZXJcIjogeyBiYWNrZ3JvdW5kQ29sb3I6IFwiI0QxRDVEQlwiLCBjdXJzb3I6IFwibm90LWFsbG93ZWRcIiB9LFxuICAgICAgICAgIH0pLFxuICAgICAgICB9KSxcbiAgICAgIH0sXG4gICAgfSxcbiAgfSxcbn0pO1xuXG50aGVtZSA9IHJlc3BvbnNpdmVGb250U2l6ZXModGhlbWUpO1xuXG5leHBvcnQgZGVmYXVsdCB0aGVtZTtcbiJdLCJuYW1lcyI6WyJjcmVhdGVUaGVtZSIsInJlc3BvbnNpdmVGb250U2l6ZXMiLCJyZWQiLCJ0aGVtZSIsImJyZWFrcG9pbnRzIiwidmFsdWVzIiwieHMiLCJzbSIsIm1kIiwibGciLCJ4bCIsInBhbGV0dGUiLCJwcmltYXJ5IiwibWFpbiIsInNlY29uZGFyeSIsImVycm9yIiwiQTQwMCIsInR5cG9ncmFwaHkiLCJmb250RmFtaWx5Iiwiam9pbiIsImgxIiwiZm9udFNpemUiLCJoMiIsImg0IiwiZm9udFdlaWdodCIsImg2IiwiaDciLCJsZXR0ZXJTcGFjaW5nIiwiaDgiLCJib2R5TGFyZ2UiLCJib2R5TWVkaXVtIiwiYm9keVJlZ3VsYXIiLCJib2R5U21hbGwiLCJib2R5RXh0cmFTbWFsbCIsImJvZHlFeHRyYUV4dHJhU21hbGwiLCJsaW5rTGFyZ2UiLCJsaW5rTWVkaXVtIiwibGlua1NtYWxsIiwibGlua0V4dHJhU21hbGwiLCJidXR0b25MYXJnZSIsImJ1dHRvblNtYWxsIiwiYnV0dG9uRXh0cmFTbWFsbCIsIm92ZXJsaW5lTGFiZWwiLCJjb21wb25lbnRzIiwiTXVpQnV0dG9uIiwidmFyaWFudHMiLCJwcm9wcyIsInZhcmlhbnQiLCJzdHlsZSIsInRleHRUcmFuc2Zvcm0iLCJ3aWR0aCIsImhlaWdodCIsImJhY2tncm91bmRDb2xvciIsImNvbG9yIiwiYm9yZGVyUmFkaXVzIiwiYm9yZGVyIiwibWF4V2lkdGgiLCJjdXJzb3IiLCJzdHlsZU92ZXJyaWRlcyIsInJvb3QiLCJvd25lclN0YXRlIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/theme.ts\n");
-
-/***/ }),
-
-/***/ "./styles/globals.css":
-/*!****************************!*\
-  !*** ./styles/globals.css ***!
-  \****************************/
+/***/ 6764:
 /***/ (() => {
 
 
 
 /***/ }),
 
-/***/ "@mui/icons-material/DarkMode":
-/*!***********************************************!*\
-  !*** external "@mui/icons-material/DarkMode" ***!
-  \***********************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("@mui/icons-material/DarkMode");
-
-/***/ }),
-
-/***/ "@mui/icons-material/LightMode":
-/*!************************************************!*\
-  !*** external "@mui/icons-material/LightMode" ***!
-  \************************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("@mui/icons-material/LightMode");
-
-/***/ }),
-
-/***/ "@mui/joy/IconButton":
-/*!**************************************!*\
-  !*** external "@mui/joy/IconButton" ***!
-  \**************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("@mui/joy/IconButton");
-
-/***/ }),
-
-/***/ "@mui/joy/styles":
-/*!**********************************!*\
-  !*** external "@mui/joy/styles" ***!
-  \**********************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("@mui/joy/styles");
-
-/***/ }),
-
-/***/ "@mui/material/CssBaseline":
-/*!********************************************!*\
-  !*** external "@mui/material/CssBaseline" ***!
-  \********************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("@mui/material/CssBaseline");
-
-/***/ }),
-
-/***/ "@mui/material/colors":
-/*!***************************************!*\
-  !*** external "@mui/material/colors" ***!
-  \***************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("@mui/material/colors");
-
-/***/ }),
-
-/***/ "@mui/material/styles":
-/*!***************************************!*\
-  !*** external "@mui/material/styles" ***!
-  \***************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("@mui/material/styles");
-
-/***/ }),
-
-/***/ "@nextui-org/react":
-/*!************************************!*\
-  !*** external "@nextui-org/react" ***!
-  \************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("@nextui-org/react");
-
-/***/ }),
-
-/***/ "react":
-/*!************************!*\
-  !*** external "react" ***!
-  \************************/
+/***/ 6689:
 /***/ ((module) => {
 
 "use strict";
@@ -143,14 +418,11 @@ module.exports = require("react");
 
 /***/ }),
 
-/***/ "react/jsx-dev-runtime":
-/*!****************************************!*\
-  !*** external "react/jsx-dev-runtime" ***!
-  \****************************************/
+/***/ 997:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("react/jsx-dev-runtime");
+module.exports = require("react/jsx-runtime");
 
 /***/ })
 
@@ -161,7 +433,7 @@ module.exports = require("react/jsx-dev-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__("./pages/_app.tsx"));
+var __webpack_exports__ = (__webpack_exec__(1123));
 module.exports = __webpack_exports__;
 
 })();
