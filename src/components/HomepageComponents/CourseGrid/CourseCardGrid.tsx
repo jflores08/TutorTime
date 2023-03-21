@@ -2,7 +2,6 @@
 import { FC } from "react";
 
 // Import Next.js components
-// import { Grid } from "@nextui-org/react";
 
 // Import MUI components
 import Grid from "@mui/material/Grid";
@@ -31,9 +30,6 @@ const CourseCardGrid: FC = () => {
         sx={{
           bgcolor: "#FFFFFF",
           display: "flex",
-          // flexDirection: "row",
-          // alignItems: "center",
-          // justifyContent: "center",
           mt: "30px",
         }}
       >

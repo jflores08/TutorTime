@@ -18,8 +18,7 @@ import Button from "@mui/material/Button";
 import Box, { BoxProps } from "@mui/material/Box";
 import { flexbox } from "@mui/system";
 // Import Custom components
-// import Link from "../Link";
-// import NextLink from "../Link";
+
 
 const CourseInfoCard: FC<{
   title: string;
