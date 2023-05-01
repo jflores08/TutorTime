@@ -28,13 +28,13 @@ export interface IUserAnswers {
   questionDetails: {
     hasSpecificQuestion: boolean | null;
     questionTopics: {
-      Uitgaven: boolean;
-      Wonen: boolean;
-      Schulden: boolean;
-      Verzekeringen: boolean;
-      Sparen: boolean;
-      Beleggen: boolean;
-      Pensioen: boolean;
+      English: boolean;
+      Reading: boolean;
+      History: boolean;
+      Math: boolean;
+      Science: boolean;
+      Chemistry: boolean;
+      Biology: boolean;
       Anders: boolean;
     };
     specificQuestion: string;
@@ -53,39 +53,38 @@ export interface IUserAnswers {
 
 /* Start of the component */
 const BookAnAppointmentFlow: FC<{}> = () => {
-  
-     /* === VARIABLES AND FUNCTIONS TO HANDLE APPEARANCE OF "PREVIOUS" AND "NEXT" BUTTONS === */
+  /* === VARIABLES AND FUNCTIONS TO HANDLE APPEARANCE OF "PREVIOUS" AND "NEXT" BUTTONS === */
   // State variable to track if the "Next" button is disabled (if true) or not (if false)
-  const [disableNextButton, setDisableNextButton] = useState(true)
-  
+  const [disableNextButton, setDisableNextButton] = useState(true);
+
   /* === VARIABLES AND FUNCTIONS RELATED TO PROGRESS BAR === */
   // State variable to track which step of the flow the user is on
-  const [step, setStep] = useState(0)
+  const [step, setStep] = useState(0);
 
   // State variable to adjust the total number of steps in the flow based on the users inputs
-  const [totalNumberOfSteps, setTotalNumberOfSteps] = useState(4)
+  const [totalNumberOfSteps, setTotalNumberOfSteps] = useState(4);
 
-   /*
+  /*
    * Function to normalize the steps in the flow to a number that can used by the progress bar component
    * @param {number} step - the step in the flow the user is on
    * @param {number} totalNumberOfSteps - the total number of steps in the flow
    * @returns {number} - the normalized step number
    */
-   const normalise = (step: number, totalNumberOfSteps: number) =>
-   (step * 100) / totalNumberOfSteps
+  const normalise = (step: number, totalNumberOfSteps: number) =>
+    (step * 100) / totalNumberOfSteps;
 
-    // Function to go to the next step of the flow
+  // Function to go to the next step of the flow
   const handleNext = () => {
-    setStep((step) => step + 1)
-  }
+    setStep((step) => step + 1);
+  };
 
   // Function to go back one step in the flow
   const handleBack = () => {
-    setStep((step) => (step == 0 ? 0 : step - 1))
-    setDisableNextButton(false)
-  }
+    setStep((step) => (step == 0 ? 0 : step - 1));
+    setDisableNextButton(false);
+  };
 
-    /* === START OF JSX === */
+  /* === START OF JSX === */
   return (
     <Box
       id="courseCardGridSectionBox"
@@ -115,7 +114,7 @@ const BookAnAppointmentFlow: FC<{}> = () => {
 
           {/* PROGRESS BAR */}
           <Grid item xs={12} sx={{ mt: "32px", color: "#F5F5F5" }}>
-            <LinearProgress 
+            <LinearProgress
               id="progressBar"
               variant="determinate"
               color="inherit"

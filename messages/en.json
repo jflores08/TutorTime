@@ -1,0 +1,67 @@
+{
+    "BookAnExpertFlow": {
+      "index": {
+        "title": "Schedule an appointment"
+      },
+      "NavigationButtons": {
+        "back": "Back",
+        "next": "Next"
+      },
+      "QuestionDetails": {
+        "firstQuestion": {
+          "questionText": "Hoe can we best help you?",
+          "radioButtonLabel1": "Ik have a specific question",
+          "radioButtonLabel2": "I want to discuss my general financial situation with an expert"
+        },
+        "secondQuestion": {
+          "questionText": "What subjects do you need help in?",
+          "checkmarkOption0": "English",
+          "checkmarkOption1": "Reading",
+          "checkmarkOption2": "History",
+          "checkmarkOption3": "Math",
+          "checkmarkOption4": "Science",
+          "checkmarkOption5": "Chemistry",
+          "checkmarkOption6": "Biology",
+          "checkmarkOption7": "Other"
+        },
+        "thirdQuestion": {
+          "questionText": "What is your question?",
+          "answerPlaceholder": "Enter your question here"
+        }
+      },
+      "SelectExpertType": {
+        "questionText": "Who can best help you?",
+        "budgetcoachOption": {
+          "label": "Budgetcoach",
+          "description": "Specialized in everything related to your expenses and budgeting",
+          "expertImagesHeader": "Our budgetcoaches"
+        },
+        "financialPlannerOption": {
+          "label": "Financial planner",
+          "description": "An expert on your broader financial situation and future",
+          "expertImagesHeader": "Our financial planners"
+        }
+      },
+      "PreferenceForSpecificExpert": {
+        "questionText": "Is there a specific person you would like to speak with?",
+        "noPreferenceOption": {
+          "label": "No",
+          "description": "We will connect you with an expert that can best help you"
+        },
+        "preferenceOption": {
+          "label": "Yes",
+          "description": "You can choose from our list of experts"
+        }
+      },
+      "ChooseSpecificExpert": {
+        "titleStart": "Select a",
+        "descriptionStart": "All our ",
+        "descriptionEnd": " are able to help you. Select an expert from our list to easily schedule a 30 minute appointment:",
+        "budgetcoachSingular": "budgetcoach",
+        "financialPlannerSingular": "financial planner",
+        "budgetcoachPlural": "budgetcoaches",
+        "financialPlannerPlural": "financial planners"
+      }
+    }
+  }
+  
