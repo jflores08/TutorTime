@@ -10,7 +10,7 @@
       "QuestionDetails": {
         "firstQuestion": {
           "questionText": "Hoe can we best help you?",
-          "radioButtonLabel1": "Ik have a specific question",
+          "radioButtonLabel1": "I have a specific question",
           "radioButtonLabel2": "I want to discuss my general financial situation with an expert"
         },
         "secondQuestion": {

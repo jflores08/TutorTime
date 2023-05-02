@@ -1,65 +1,65 @@
 // Import React
-import { FC, ChangeEvent } from 'react'
+import { FC, ChangeEvent } from "react";
 
 // import { useTranslations } from 'next-intl'
 
 // Import MUI components
-import Typography from '@mui/material/Typography'
-import { FormControl, FormControlLabel } from '@mui/material'
-import { Radio, RadioGroup } from '@mui/material'
-import Grid from '@mui/material/Grid'
-import Box from '@mui/material/Box'
-import Checkbox from '@mui/material/Checkbox'
+import Typography from "@mui/material/Typography";
+import { FormControl, FormControlLabel } from "@mui/material";
+import { Radio, RadioGroup } from "@mui/material";
+import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
+import Checkbox from "@mui/material/Checkbox";
 
 // Import local components and interfaces
-import { TextField } from '../../Inputs/TextField'
-import { IUserAnswers } from '../index'
+import { TextField } from "../../Inputs/TextField";
+import { IUserAnswers } from "../index";
 
-const secondQuestion= {
-  "questionText": "What is your question about?",
-  "checkmarkOption0": "Expenses",
-  "checkmarkOption1": "Housing",
-  "checkmarkOption2": "Debt",
-  "checkmarkOption3": "Insurance",
-  "checkmarkOption4": "Saving",
-  "checkmarkOption5": "Investing",
-  "checkmarkOption6": "Pension",
-  "checkmarkOption7": "Other"
-}
+const secondQuestion = {
+  questionText: "What is your question about?",
+  checkmarkOption0: "Expenses",
+  checkmarkOption1: "Housing",
+  checkmarkOption2: "Debt",
+  checkmarkOption3: "Insurance",
+  checkmarkOption4: "Saving",
+  checkmarkOption5: "Investing",
+  checkmarkOption6: "Pension",
+  checkmarkOption7: "Other",
+};
 
-// Start component definition
+/* Start of the component */
 const QuestionDetails: FC<{
-  userAnswers: IUserAnswers
-  setUserAnswers: Function
-  setDisableNextButton: Function
+  userAnswers: IUserAnswers;
+  setUserAnswers: Function;
+  setDisableNextButton: Function;
 }> = ({ userAnswers, setUserAnswers, setDisableNextButton }) => {
   // const t = useTranslations('BookAnExpertFlow.QuestionDetails')
-  const questionDetails = userAnswers.questionDetails
+  const questionDetails = userAnswers.questionDetails;
 
   const handleRadioButtonChange = (e: ChangeEvent<HTMLInputElement>) => {
     // Parse the value of the radio button from string to boolean and set it to the correct format for userAnswers state variable
-    let updatedQuestionDetails = { ...questionDetails }
-    if (e.target.value === 'true') {
-      updatedQuestionDetails.hasSpecificQuestion = true
-    } else if (e.target.value === 'false') {
-      updatedQuestionDetails.hasSpecificQuestion = false
+    let updatedQuestionDetails = { ...questionDetails };
+    if (e.target.value === "true") {
+      updatedQuestionDetails.hasSpecificQuestion = true;
+    } else if (e.target.value === "false") {
+      updatedQuestionDetails.hasSpecificQuestion = false;
     } else {
-      console.error('Error: Unknown value for radio button')
-      return
+      console.error("Error: Unknown value for radio button");
+      return;
     }
 
     // Update the state of userAnswers with the new answer
     setUserAnswers({
       ...userAnswers,
       questionDetails: updatedQuestionDetails,
-    })
-    setDisableNextButton(false)
-  }
+    });
+    setDisableNextButton(false);
+  };
 
   const handleCheckboxChange = (e: ChangeEvent<HTMLInputElement>) => {
-    let updatedQuestionTopics = { ...questionDetails.questionTopics }
+    let updatedQuestionTopics = { ...questionDetails.questionTopics };
     updatedQuestionTopics[e.target.name as keyof typeof updatedQuestionTopics] =
-      e.target.checked
+      e.target.checked;
 
     setUserAnswers({
       ...userAnswers,
@@ -67,8 +67,8 @@ const QuestionDetails: FC<{
         ...questionDetails,
         questionTopics: updatedQuestionTopics,
       },
-    })
-  }
+    });
+  };
 
   const handleTextFieldChange = (e: ChangeEvent<HTMLInputElement>) => {
     setUserAnswers({
@@ -77,18 +77,19 @@ const QuestionDetails: FC<{
         ...questionDetails,
         specificQuestion: e.target.value,
       },
-    })
-  }
+    });
+  };
 
+  /* === START OF JSX === */
   return (
     <Box id="question-details-content">
       {/* First question */}
       <Typography variant="h6" lineHeight="36px">
-        {'How can we best help you?'}
+        {"How can we best help you?"}
       </Typography>
 
       {/* Radio button answer options to first question */}
-      <FormControl sx={{ mt: '24px' }}>
+      <FormControl sx={{ mt: "24px" }}>
         <RadioGroup
           row
           aria-labelledby="question-type-options-label"
@@ -101,13 +102,13 @@ const QuestionDetails: FC<{
             control={
               <Radio
                 sx={{
-                  '& .MuiSvgIcon-root': {
+                  "& .MuiSvgIcon-root": {
                     fontSize: 32,
                   },
                 }}
               />
             }
-            label={'I have a specific question'}
+            label={"I have a specific question"}
           />
 
           <FormControlLabel
@@ -115,28 +116,30 @@ const QuestionDetails: FC<{
             control={
               <Radio
                 sx={{
-                  '& .MuiSvgIcon-root': {
+                  "& .MuiSvgIcon-root": {
                     fontSize: 32,
                   },
                 }}
               />
             }
-            label={'I want to discuss my general financial situation with an expert'}
+            label={
+              "I want to discuss my general financial situation with an expert"
+            }
           />
         </RadioGroup>
       </FormControl>
 
       {/* Second question (optional) */}
       {questionDetails.hasSpecificQuestion && (
-        <Box sx={{ mt: '10px' }}>
+        <Box sx={{ mt: "10px" }}>
           <Typography
             variant="h6"
             sx={{
-              mt: '42px',
-              mb: '24px',
+              mt: "42px",
+              mb: "24px",
             }}
           >
-            {'What is your question about?'}
+            {"What is your question about?"}
           </Typography>
 
           {/* Checkbox answer options to second question */}
@@ -151,7 +154,7 @@ const QuestionDetails: FC<{
                       sm={3}
                       md={3}
                       key={topic}
-                      sx={{ display: 'flex' }}
+                      sx={{ display: "flex" }}
                     >
                       <FormControlLabel
                         // @ts-ignore
@@ -175,23 +178,23 @@ const QuestionDetails: FC<{
           <Typography
             variant="h6"
             sx={{
-              mt: '42px',
-              mb: '24px',
+              mt: "42px",
+              mb: "24px",
             }}
           >
-            {'What is your question?'}
+            {"What is your question?"}
           </Typography>
           <TextField
             onChange={handleTextFieldChange}
             value={questionDetails.specificQuestion}
-            placeholder={'Enter your question here'}
+            placeholder={"Enter your question here"}
             fullWidth={true}
             width="100%"
           />
         </Box>
       )}
     </Box>
-  )
-}
+  );
+};
 
-export { QuestionDetails }
+export { QuestionDetails };

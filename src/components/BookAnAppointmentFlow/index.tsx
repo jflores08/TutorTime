@@ -11,12 +11,14 @@ import LinearProgress from "@mui/material/LinearProgress";
 import Typography from "@mui/material/Typography";
 
 // Import local components
-// import { QuestionDetails } from "./subpages/QuestionDetails";
+import { QuestionDetails } from "./subpages/QuestionDetails";
 // import { SelectExpertType } from "./subpages/SelectExpertType";
 // import { PreferenceForSpecificExpert } from "./subpages/PreferenceForSpecificExpert";
 // import { ChooseSpecificExpert } from "./subpages/ChooseSpecificExpert";
 // import { PickDateWithCalendly } from "./subpages/PickDateWithCalendly";
 import { PickDateWithCalendly } from "./subpages/PickDateWithCalendly";
+import { AppointmentMenu } from "./AppointmentMenu";
+import { SquareAppointmentWidget } from "./subpages/SquareAppointmentWidget";
 import { NavigationButtons } from "./NavigationButtons";
 
 const financial_planner_group_calendly_link =
@@ -35,24 +37,47 @@ export interface IUserAnswers {
       Science: boolean;
       Chemistry: boolean;
       Biology: boolean;
-      Anders: boolean;
+      Other: boolean;
     };
     specificQuestion: string;
   };
   expertType: "financial_planner" | "budgetcoach" | null;
-  specificExpert: {
-    hasPreferenceForSpecificExpert: boolean | null;
+  clientInfo: {
+    isReturnClient: boolean | null;
     expertDetails: {
       name: string;
       avatar: string;
       id: string;
-      calendlyLink: string;
+      email: string;
     } | null;
   };
 }
 
 /* Start of the component */
 const BookAnAppointmentFlow: FC<{}> = () => {
+  /* === STATE VARIABLE TO TRACK THE USER'S ANSWERS === */
+  const [userAnswers, setUserAnswers] = useState<IUserAnswers>({
+    questionDetails: {
+      hasSpecificQuestion: null,
+      questionTopics: {
+        English: false,
+        Reading: false,
+        History: false,
+        Math: false,
+        Science: false,
+        Chemistry: false,
+        Biology: false,
+        Other: false,
+      },
+      specificQuestion: "",
+    },
+    expertType: null,
+    clientInfo: {
+      isReturnClient: null,
+      expertDetails: null,
+    },
+  });
+
   /* === VARIABLES AND FUNCTIONS TO HANDLE APPEARANCE OF "PREVIOUS" AND "NEXT" BUTTONS === */
   // State variable to track if the "Next" button is disabled (if true) or not (if false)
   const [disableNextButton, setDisableNextButton] = useState(true);
@@ -119,6 +144,67 @@ const BookAnAppointmentFlow: FC<{}> = () => {
               variant="determinate"
               color="inherit"
               value={normalise(step, totalNumberOfSteps)}
+            />
+          </Grid>
+          {/* MAIN CONTENT (SUBPAGES) */}
+          <Grid
+            item
+            xs={12}
+            id="main-content"
+            width={"100%"}
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              mt: "54px",
+            }}
+          >
+            <Box sx={{ minHeight: "150px" }}>
+              {/* Show screen where user can provide details about the reason / topic of their conversation */}
+              {step == 0 && (
+                <QuestionDetails
+                  userAnswers={userAnswers}
+                  setUserAnswers={setUserAnswers}
+                  setDisableNextButton={setDisableNextButton}
+                />
+              )}
+              {/* Show screen where user can choose between a budgetcoach or a financial planner */}
+              {step == 1 && (
+                <QuestionDetails
+                  userAnswers={userAnswers}
+                  setUserAnswers={setUserAnswers}
+                  setDisableNextButton={setDisableNextButton}
+                />
+              )}
+              {/* Show screen where user can use square appointments widget to pick an appointment and pay. */}
+              {step === 2 && <SquareAppointmentWidget />}
+              {/* Show group calendly widget if user is in step 3 and does not have a preference for a specific expert */}
+              {step === 3 &&
+                userAnswers.clientInfo.isReturnClient === false && (
+                  <SquareAppointmentWidget />
+                )}
+              {/* Give user option to choose a specific expert if they indicated to want that and are in step 3 */}
+              {step == 3 && userAnswers.clientInfo.isReturnClient === true && (
+                <SquareAppointmentWidget />
+              )}
+              {/* Show selected expert's calendly widget if user is in step 4 and has selected a specific expert to speak with */}
+              {/* {step === 4 &&
+                userAnswers.specificExpert.hasPreferenceForSpecificExpert ===
+                  true &&
+                userAnswers.specificExpert.expertDetails !== null && (
+                  <PickDateWithCalendly
+                    calendlyLink={
+                      userAnswers.specificExpert.expertDetails.calendlyLink
+                    }
+                  />
+                )} */}
+            </Box>
+
+            {/* NAVIGATION BUTTONS */}
+            <NavigationButtons
+              disableNextButton={disableNextButton}
+              step={step}
+              handleNext={handleNext}
+              handleBack={handleBack}
             />
           </Grid>
         </Grid>
